@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;500;700;900&display=swap");
     </style>
 </head>
 
@@ -33,16 +33,14 @@
                 <p class="contactos">Contactos</p>
             </div>
         </nav>
-        <div>
-            <g class="grupo-contacto1">
-                <svg class="icono-correo"><use href="./images/icons.svg#icon-correo"></use>
-          </svg>
-                <a class="correo" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </g>
-            <g class="grupo-contacto2">
-                <svg class="icono-tel"><use href="./images/icons.svg#icon-movil"></use></svg>
-                <a class="tel" href="tel:+525555296000">+52 5555296000</a>
-            </g>
+        <div class="grupo-contacto1">
+            <svg class="icono-correo"><use href="./images/icons.svg#icon-correo"></use></svg>
+
+            <a class="correo" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <div class="grupo-contacto1">
+            <svg class="icono-tel"><use href="./images/icons.svg#icon-movil"></use></svg>
+            <a class="tel" href="tel:+525555296000">+52 5555296000</a>
         </div>
     </header>
 
@@ -377,6 +375,7 @@
                 </div>
             </div>
         </section>
+        <script src="./js/modal.js"></script>
     </main>
 
     <footer>

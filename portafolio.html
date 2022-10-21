@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet " href="./css/styles.css ">
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@500&display=swap ");
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;500;700;900&display=swap ");
     </style>
     <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
 </head>
@@ -34,17 +34,17 @@
                 <p class="contactos">Contactos</p>
             </div>
         </nav>
-        <div>
-            <g class="grupo-contacto1">
-                <svg class="icono-correo"><use href="./images/icons.svg#icon-correo"></use>
-      </svg>
-                <a class="correo" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </g>
-            <g class="grupo-contacto2">
-                <svg class="icono-tel"><use href="./images/icons.svg#icon-movil"></use></svg>
-                <a class="tel" href="tel:+525555296000">+52 5555296000</a>
-            </g>
+        <div class="grupo-contacto1">
+            <svg class="icono-correo"><use href="./images/icons.svg#icon-correo"></use></svg>
+
+            <a class="correo" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </div>
+        <div class="grupo-contacto1">
+            <svg class="icono-tel"><use href="./images/icons.svg#icon-movil"></use></svg>
+            <a class="tel" href="tel:+525555296000">+52 5555296000</a>
+        </div>
+
+
     </header>
 
     <main>
@@ -61,10 +61,17 @@
         <section class="container">
             <div class="filatarjetas1">
                 <div class="tarjeta2">
-                    <img src="./images/people.jpeg " width="370" height="294" alt="People">
+                    <div class="caja-ventana">
+                        <img src="./images/people.jpeg " width="370" height="294" alt="People">
+                        <div class="caja-despliegue">
+                            <p class="texto-despliegue">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.</p>
+                        </div>
+                    </div>
                     <p class="etiqueta"><b>Tecnoduck</b></p>
                     <p class="etiqueta">Sitio Web</p>
                 </div>
+
+
                 <div class="tarjeta2">
                     <img src="./images/sports.jpeg " width="370" height="294" alt="Sports">
                     <p class="etiqueta"><b>Póster de New Orleans vs</b></p>
