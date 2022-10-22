@@ -86,11 +86,23 @@ nav {
 }
 
 .link1 {
-    text-decoration: underline 3px #2196F3;
+    text-decoration: none;
 }
 
-.portafolio:hover {
-    color: #2196f3;
+.activable {
+    height: 4px;
+    width: 48px;
+    left: 453px;
+    top: 76px;
+    border-radius: 2px;
+    background-color: blue;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.grupo-activable:hover * {
+    color: #2196F3;
+    fill: #2196F3;
 }
 
 .contactos {
