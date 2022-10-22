@@ -95,14 +95,11 @@ nav {
     left: 453px;
     top: 76px;
     border-radius: 2px;
-    background-color: blue;
-    margin-top: -4px;
-    margin-left: 10px;
+    margin-top: -15px;
 }
 
 .grupo-activable:hover * {
     color: #2196F3;
-    fill: #2196F3;
 }
 
 .contactos {
@@ -257,6 +254,7 @@ button {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.6s;
 }
 
 .backdrop {
