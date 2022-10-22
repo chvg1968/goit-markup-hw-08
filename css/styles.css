@@ -86,24 +86,16 @@ nav {
 }
 
 .link1 {
-    text-decoration: none;
-}
-
-.activable {
     position: relative;
-    height: 4px;
-    width: 48px;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: -10px;
+    text-decoration: none;
 }
 
 .linea {
     position: absolute;
+    height: 4px;
+    width: 48px;
     font-weight: 900;
+    margin-top: -15px;
 }
 
 .grupo-activable:hover * {
