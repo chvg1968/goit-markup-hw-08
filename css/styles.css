@@ -185,6 +185,7 @@ button {
     border-radius: 4px;
     border: none;
     background: #f5f4fa;
+    cursor: pointer
 }
 
 .primerBoton {
@@ -221,7 +222,10 @@ button {
     letter-spacing: 0.06em;
 }
 
-.botppal {
+
+/* -------------------------------Ventana modal */
+
+.boton-servicio {
     height: 50px;
     width: 300px;
     left: 666px;
@@ -235,6 +239,51 @@ button {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.06em;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000033;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    height: 581px;
+    width: 528px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+}
+
+.icono-cierre {
+    position: absolute;
+    top: 8px;
+    left: 490px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: white;
+    border: 1px solid #0000001A;
+    color: black;
+    text-align: center;
+    font-size: 22px;
 }
 
 
@@ -644,12 +693,12 @@ button:hover {
     align-items: center;
     justify-content: space-evenly;
     margin-top: 59px;
-    margin-bottom: 44px
+    margin-bottom: 44px;
 }
 
 .tit4 {
     height: 37px;
-    width: 323px;
+    width: 329px;
     left: 640px;
     top: 2366px;
     border-radius: nullpx;
@@ -716,7 +765,7 @@ address {
 
 .encuentrenos {
     height: 16px;
-    width: 135px;
+    width: 136px;
     left: 516px;
     top: 1703px;
     font-size: 14px;
