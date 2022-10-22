@@ -331,7 +331,6 @@ button {
     width: 270px;
     left: 206px;
     top: 919px;
-    border-radius: nullpx;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -714,7 +713,6 @@ button:hover {
     width: 329px;
     left: 640px;
     top: 2366px;
-    border-radius: nullpx;
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
@@ -759,7 +757,6 @@ footer {
     width: 145px;
     left: 215px;
     top: 2739px;
-    border-radius: nullpx;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
