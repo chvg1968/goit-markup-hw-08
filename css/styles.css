@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blue-variant: #2196f3;
+    --white-color: white;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -37,7 +42,7 @@ header {
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196f3;
+    color: var(--blue-variant);
     margin-left: -60px
 }
 
@@ -56,8 +61,6 @@ nav {
     left: 453px;
     top: 32px;
     font-weight: 500;
-    font-size: 18px;
-    margin-right: 50px;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -67,7 +70,16 @@ nav {
 }
 
 .estudio:hover {
-    color: #2196f3;
+    color: var(--blue-variant);
+}
+
+.subrayado {
+    content: "";
+    width: 48px;
+    height: 4px;
+    margin-top: -4px;
+    display: block;
+    background-color: var(--blue-variant);
 }
 
 .portafolio {
@@ -85,21 +97,12 @@ nav {
     margin-right: 46.5px;
 }
 
+.portafolio:hover {
+    color: var(--blue-variant);
+}
+
 .link1 {
-    position: relative;
     text-decoration: none;
-}
-
-.linea {
-    position: absolute;
-    height: 4px;
-    width: 48px;
-    font-weight: 900;
-    margin-top: -15px;
-}
-
-.grupo-activable:hover * {
-    color: #2196F3;
 }
 
 .contactos {
@@ -118,7 +121,7 @@ nav {
 }
 
 .contactos:hover {
-    color: #2196f3;
+    color: var(--blue-variant);
 }
 
 .icono-correo {
@@ -143,8 +146,8 @@ nav {
 }
 
 .grupo-contacto1:hover * {
-    fill: #2196F3;
-    color: #2196F3
+    fill: var(--blue-variant);
+    color: var(--blue-variant)
 }
 
 .icono-tel {
@@ -170,8 +173,8 @@ nav {
 }
 
 .grupo-contacto1:hover * {
-    fill: #2196F3;
-    color: #2196F3
+    fill: var(--blue-variant);
+    color: var(--blue-variant)
 }
 
 
@@ -200,8 +203,8 @@ button {
 .primerBoton {
     width: 73px;
     height: 38px;
-    background-color: #2196f3;
-    color: white;
+    background-color: var(--blue-variant);
+    color: var(--white-color);
 }
 
 .primerBoton:hover {
@@ -220,7 +223,7 @@ button {
     align-items: center;
     margin-bottom: 94px;
     text-align: center;
-    color: white;
+    color: var(--white-color);
 }
 
 .titppal {
@@ -241,8 +244,8 @@ button {
     top: 430px;
     border-radius: 4px;
     padding: 10px 32px 10px 32px;
-    background-color: #2196f3;
-    color: white;
+    background-color: var(--blue-variant);
+    color: var(--white-color);
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -276,7 +279,7 @@ button {
     height: 581px;
     width: 528px;
     border-radius: 4px;
-    background: white;
+    background: var(--white-color);
     box-shadow: 0px 2px 1px 0px #00000033;
     box-shadow: 0px 1px 1px 0px #00000024;
     box-shadow: 0px 1px 3px 0px #0000001F;
@@ -289,7 +292,7 @@ button {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background: white;
+    background: var(--white-color);
     border: 1px solid #0000001A;
     color: black;
     text-align: center;
@@ -465,8 +468,8 @@ button {
 }
 
 .icon:hover {
-    background-color: #2196f3;
-    fill: white
+    background-color: var(--blue-variant);
+    fill: var(--white-color)
 }
 
 
@@ -677,13 +680,13 @@ button {
     text-align: justify;
     margin-left: 24px;
     margin-top: 63px;
-    color: white
+    color: var(--white-color)
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #2196F3;
-    color: white;
+    background-color: var(--blue-variant);
+    color: var(--white-color);
     box-shadow: 0px 2px 2px 0px #0000001F;
     box-shadow: 0px 1px 2px 0px #00000014;
     box-shadow: 0px 3px 1px 0px #0000001A;
@@ -697,7 +700,7 @@ button:hover {
     left: 0px;
     top: 1599px;
     border-radius: 0px;
-    background: white;
+    background: var(--white-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -735,8 +738,8 @@ button:hover {
 }
 
 .icon-client:hover {
-    fill: #2196F3;
-    border: solid 1px #2196F3
+    fill: var(--blue-variant);
+    border: solid 1px var(--blue-variant)
 }
 
 
@@ -763,7 +766,7 @@ footer {
     line-height: 31px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #2196F3;
+    color: var(--blue-variant);
     padding-top: 60px;
     margin-left: 215px;
 }
@@ -784,7 +787,7 @@ address {
     letter-spacing: 0.03em;
     margin-left: 156px;
     margin-top: -12px;
-    color: white;
+    color: var(--white-color);
 }
 
 .direccion {
@@ -797,7 +800,7 @@ ul {
 }
 
 .lugar {
-    color: white;
+    color: var(--white-color);
 }
 
 .info {
@@ -819,10 +822,10 @@ ul {
     border-radius: 100px;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: white;
+    fill: var(--white-color);
     margin-right: 10px;
 }
 
 .icon-p:hover {
-    background-color: #2196F3;
+    background-color: var(--blue-variant);
 }
