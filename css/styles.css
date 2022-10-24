@@ -80,7 +80,7 @@ nav {
     margin-top: -4px;
     display: block;
     background-color: var(--blue-variant);
-    margin-left: -130px;
+    margin-left: -140px;
     transition: transform 1s;
 }
 
@@ -100,7 +100,7 @@ nav {
 }
 
 .boxactive:hover .subrayado-to-left {
-    transform: translateX(13px);
+    transform: translateX(0px);
 }
 
 .portafolio {
