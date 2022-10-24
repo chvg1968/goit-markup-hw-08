@@ -73,13 +73,34 @@ nav {
     color: var(--blue-variant);
 }
 
-.subrayado {
+.subrayado-to-right {
     content: "";
     width: 48px;
     height: 4px;
     margin-top: -4px;
     display: block;
     background-color: var(--blue-variant);
+    margin-left: -130px;
+    transition: transform 1s;
+}
+
+.boxactive:hover .subrayado-to-right {
+    transform: translateX(147px);
+}
+
+.subrayado-to-left {
+    content: "";
+    width: 48px;
+    height: 4px;
+    margin-top: -4px;
+    display: block;
+    background-color: var(--blue-variant);
+    transform: translateX(147px);
+    transition: transform 1s;
+}
+
+.boxactive:hover .subrayado-to-left {
+    transform: translateX(13px);
 }
 
 .portafolio {
