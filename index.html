@@ -76,7 +76,6 @@
                 class="form1"
                 name="signup_form"
                 autocomplete="on"
-                novalidate
               >
                 <h3 class="titulo-form">
                   Deje sus datos, nos contactaremos con usted
@@ -84,7 +83,7 @@
                 <div class="caja-input">
                   <label class="etiqueta-form">Nombre</label><br />
                   <div class="grupo-hover">
-                    <input class="entrada-form" type:"text" name="Nombre">
+                    <input class="entrada-form" type:"text" name="Nombre" required>
                     <div class="caja-icon-form">
                       <svg class="icon-form">
                         <use href="./images/icons.svg#icon-persona"></use>
@@ -96,7 +95,7 @@
                 <div class="caja-input">
                   <label class="etiqueta-form">Teléfono</label><br />
                   <div class="grupo-hover">
-                    <input class="entrada-form" type:"tel" name="Teléfono">
+                    <input class="entrada-form" type:"tel" name="Teléfono" required>
                     <div class="caja-icon-form">
                       <svg class="icon-form">
                         <use href="./images/icons.svg#icon-telefono"></use>
@@ -108,7 +107,7 @@
                 <div class="caja-input">
                   <label class="etiqueta-form">Email</label><br />
                   <div class="grupo-hover">
-                    <input class="entrada-form" type:"email" name="Email">
+                    <input class="entrada-form" type:"email" name="Email" required>
                     <div class="caja-icon-form">
                       <svg class="icon-form">
                         <use href="./images/icons.svg#icon-correo"></use>
@@ -128,7 +127,7 @@
 
                 <div class="check">
                   <div>
-                    <input type="checkbox" name="newsletter" />
+                    <input type="checkbox" name="newsletter" required />
                   </div>
                   <div class="etiqueta-s">
                     <label class="etiqueta-submit">
@@ -581,20 +580,22 @@
             <div>
               <input
                 class="form-control"
-                type="text"
+                type:"email"
+                name="Email"
+                required
                 placeholder="Correo Electrónico"
-              />
+            </div>
+            <div>
+              <button class="boton-suscripcion">
+                <h3 class="texto-boton">Suscríbase</h3>
+                <svg class="fly">
+                  <use href="./images/icons.svg#icon-enviar-icono"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
-        <div>
-          <button class="boton-suscripcion">
-            <h3 class="texto-boton">Suscríbase</h3>
-            <svg class="fly">
-              <use href="./images/icons.svg#icon-enviar-icono"></use>
-            </svg>
-          </button>
-        </div>
+        
       </address>
     </footer>
   </body>
