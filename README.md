@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-Tarea No. 6
+# goit-markup-hw-07
+Tarea No. 7
