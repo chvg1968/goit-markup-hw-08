@@ -154,11 +154,16 @@ nav {
   width: 135px;
   left: 1078px;
   top: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 0px;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  font-family: font-gral;
+  text-align: left;
+  color: color-header-letter;
 }
 
 .header-left__icontel {
@@ -174,12 +179,16 @@ nav {
   width: 118px;
   left: 1263px;
   top: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 0px;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
-  font-family: font-gral;
+  text-align: left;
+  color: color-header-letter;
 }
 
 .header-left__box:hover * {
@@ -392,7 +401,6 @@ nav {
 }
 .cardsrow-card__label {
   margin-left: 24px;
-  font-family: font-gral;
 }
 .cardsrow-card__slide {
   position: absolute;
@@ -647,14 +655,16 @@ nav {
   background-color: background-footer;
 }
 .footer__find {
-  height: 16px;
-  width: 136px;
-  left: 516px;
-  top: 1703px;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
+  text-align: left;
+  height: 16px;
+  width: 136px;
+  left: 516px;
+  top: 1703px;
   margin-left: 156px;
   margin-top: -12px;
   color: white-color;
@@ -738,14 +748,15 @@ nav {
   cursor: pointer;
 }
 .footer-suscription__label {
-  position: relative;
-  height: 16px;
-  width: 275px;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
+  position: relative;
+  height: 16px;
+  width: 275px;
   color: white-color;
   text-decoration: none;
   margin-bottom: 20px;
@@ -759,15 +770,15 @@ nav {
   fill: white-color;
 }
 .footer-suscription-button__text {
-  height: 30px;
-  width: 89px;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  color: white-color;
-  font-family: font-gral;
+  color: #ffffff;
+  height: 30px;
+  width: 89px;
 }
 
 *,

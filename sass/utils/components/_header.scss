@@ -132,15 +132,7 @@ nav {
 }
 
 .header-left__email {
-  height: 16px;
-  width: 135px;
-  left: 1078px;
-  top: 32px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  font-family: font-gral;
+  @include header-letter(135px, 1078px, 0px);
 }
 
 
@@ -153,16 +145,7 @@ nav {
 }
 
 .header-left__tel {
-  height: 16px;
-  width: 118px;
-  left: 1263px;
-  top: 32px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  font-family: font-gral;
+  @include header-letter(118px, 1263px, 0px);
 }
 
 .header-left__box:hover * {

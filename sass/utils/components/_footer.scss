@@ -1,4 +1,23 @@
 // Elementos del footer
+@mixin footer-findLetter {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+@mixin footer-buttonText {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+
 
 .footer {
   height: 252px;
@@ -8,14 +27,11 @@
   border-radius: 0px;
   background-color: background-footer;
   &__find {
+    @include footer-findLetter;
     height: 16px;
     width: 136px;
     left: 516px;
     top: 1703px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
     margin-left: 156px;
     margin-top: -12px;
     color: white-color;
@@ -100,14 +116,10 @@
     cursor: pointer;
   }
   &__label {
+    @include footer-findLetter;
     position: relative;
     height: 16px;
     width: 275px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
     color: white-color;
     text-decoration: none;
     margin-bottom: 20px;
@@ -122,14 +134,8 @@
     fill: white-color;
   }
   &__text {
+    @include footer-buttonText;
     height: 30px;
     width: 89px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: white-color;
-    font-family: font-gral;
   }
 }
