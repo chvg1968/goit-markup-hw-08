@@ -29,7 +29,7 @@ nav {
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: var(--blue-variant);
+  color: blue-variant;
   margin-left: -60px;
 }
 
@@ -38,18 +38,16 @@ nav {
   width: 49px;
   left: 453px;
   top: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   margin-top: 32px;
   margin-bottom: 32px;
   margin-right: 37.5px;
-}
-
-.nav__word1:hover {
-  cursor: pointer;
-  color: var(--blue-variant);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: color-header-letter;
 }
 
 .nav__word2 {
@@ -57,19 +55,43 @@ nav {
   width: 65px;
   left: 552px;
   top: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 46.5px;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
+  color: color-header-letter;
+}
+
+.nav__word3 {
+  height: 16px;
+  width: 67px;
+  left: 667px;
+  top: 32px;
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-right: 46.5px;
+  margin-right: 0px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: color-header-letter;
+}
+
+.nav__word1:hover {
+  cursor: pointer;
+  color: blue-variant;
 }
 
 .nav__word2:hover {
   cursor: pointer;
-  color: var(--blue-variant);
+  color: blue-variant;
 }
 
 .nav__underlinetoright {
@@ -78,9 +100,9 @@ nav {
   height: 4px;
   margin-top: -4px;
   display: block;
-  background-color: var(--blue-variant);
-  margin-left: -140px;
+  background-color: blue-variant;
   transition: transform 1s;
+  margin-left: -140px;
 }
 
 .nav__box:hover .nav__underlinetoright {
@@ -93,9 +115,9 @@ nav {
   height: 4px;
   margin-top: -4px;
   display: block;
-  background-color: var(--blue-variant);
-  transform: translateX(147px);
+  background-color: blue-variant;
   transition: transform 1s;
+  transform: translateX(147px);
 }
 
 .nav__box:hover .nav__underlinetoleft {
@@ -107,22 +129,8 @@ nav {
   text-decoration: none;
 }
 
-.nav__word3 {
-  height: 16px;
-  width: 67px;
-  left: 667px;
-  top: 32px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
 .nav__word3:hover {
-  color: var(--blue-variant);
+  color: blue-variant;
 }
 
 .header-left {
@@ -150,6 +158,7 @@ nav {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
+  font-family: font-gral;
 }
 
 .header-left__icontel {
@@ -170,11 +179,12 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  font-family: font-gral;
 }
 
 .header-left__box:hover * {
-  fill: var(--blue-variant);
-  color: var(--blue-variant);
+  fill: blue-variant;
+  color: blue-variant;
 }
 
 .box {
@@ -382,6 +392,7 @@ nav {
 }
 .cardsrow-card__label {
   margin-left: 24px;
+  font-family: font-gral;
 }
 .cardsrow-card__slide {
   position: absolute;
@@ -396,14 +407,16 @@ nav {
 .cardsrow-card__text {
   height: 168px;
   width: 322px;
+  text-align: justify;
+  margin-left: 24px;
+  margin-top: 63px;
+  background: white-color;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.03em;
-  text-align: justify;
-  margin-left: 24px;
-  margin-top: 63px;
-  color: white-color;
+  text-align: left;
 }
 .cardsrow-card__window {
   position: relative;
@@ -570,6 +583,7 @@ nav {
   justify-content: center;
   text-align: center;
   margin-top: -70px;
+  font-family: font-gral;
 }
 
 .buttons-row {
@@ -735,6 +749,7 @@ nav {
   color: white-color;
   text-decoration: none;
   margin-bottom: 20px;
+  font-family: font-gral;
 }
 
 .footer-suscription-button__icon {
@@ -752,6 +767,7 @@ nav {
   letter-spacing: 0.06em;
   text-align: center;
   color: white-color;
+  font-family: font-gral;
 }
 
 *,
@@ -772,6 +788,13 @@ body {
 }
 
 button {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: #212121;
   display: flex;
   justify-content: center;
   align-items: center;

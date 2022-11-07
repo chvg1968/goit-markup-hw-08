@@ -1,3 +1,13 @@
+@mixin cards-letterIn {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+
 .cardsrow {
     display: flex;
     justify-content: space-evenly;
@@ -15,6 +25,7 @@
     margin-right: 30px;
     &__label {
       margin-left: 24px;
+      font-family: font-gral;
     }
     &__slide {
       position: absolute;
@@ -29,14 +40,12 @@
     &__text {
       height: 168px;
       width: 322px;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 28px;
-      letter-spacing: 0.03em;
       text-align: justify;
       margin-left: 24px;
       margin-top: 63px;
-      color: white-color;
+      background: white-color;
+      @include cards-letterIn;
+      
     }
     &__window {
       position: relative;

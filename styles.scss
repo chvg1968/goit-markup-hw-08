@@ -27,7 +27,18 @@ body {
   margin-right: auto;
 }
 
+@mixin button-letter {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: #212121;
+}
+
 button {
+  @include button-letter;
   display: flex;
   justify-content: center;
   align-items: center;

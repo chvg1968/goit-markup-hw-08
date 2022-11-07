@@ -30,58 +30,64 @@ nav {
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: var(--blue-variant);
+  color: blue-variant;
   margin-left: -60px;
 }
 
-.nav__word1 {
+@mixin header-letter($width, $left, $marginright) {
   height: 16px;
-  width: 49px;
-  left: 453px;
+  width: $width;
+  left: $left;
   top: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-right: 37.5px;
-}
-
-.nav__word1:hover {
-  cursor: pointer;
-  color: var(--blue-variant);
-}
-
-.nav__word2 {
-  height: 16px;
-  width: 65px;
-  left: 552px;
-  top: 32px;
+  margin-right: $marginright;
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-right: 46.5px;
+  color: color-header-letter;
 }
+
+.nav__word1 {
+  @include header-letter(49px, 453px, 37.5px);
+}
+
+.nav__word2 {
+  @include header-letter(65px, 552px, 46.5px);
+}
+
+.nav__word3 {
+  @include header-letter(67px, 667px, 0px);
+}
+
+.nav__word1:hover {
+  cursor: pointer;
+  color: blue-variant;
+}
+
 
 .nav__word2:hover {
   cursor: pointer;
-  color: var(--blue-variant);
+  color: blue-variant;
 }
 
-.nav__underlinetoright{
+@mixin underline-format{
   content: "";
   width: 48px;
   height: 4px;
   margin-top: -4px;
   display: block;
-  background-color: var(--blue-variant);
-  margin-left:-140px; 
+  background-color: blue-variant;
   transition: transform 1s;
+}
+
+.nav__underlinetoright{
+  @include underline-format;
+  margin-left:-140px; 
+  
 }
 
 .nav__box:hover .nav__underlinetoright {
@@ -89,14 +95,9 @@ nav {
 }
 
 .nav__underlinetoleft {
-  content: "";
-  width: 48px;
-  height: 4px;
-  margin-top: -4px;
-  display: block;
-  background-color: var(--blue-variant);
+  @include underline-format;
   transform:translateX(147px);
-  transition: transform 1s;
+  
 }
 
 .nav__box:hover .nav__underlinetoleft {
@@ -108,22 +109,10 @@ nav {
   text-decoration: none;
 }
 
-.nav__word3 {
-  height: 16px;
-  width: 67px;
-  left: 667px;
-  top: 32px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
+
 
 .nav__word3:hover {
-  color: var(--blue-variant);
+  color: blue-variant;
 }
 
 .header-left{
@@ -151,6 +140,7 @@ nav {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
+  font-family: font-gral;
 }
 
 
@@ -172,9 +162,10 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  font-family: font-gral;
 }
 
 .header-left__box:hover * {
-  fill: var(--blue-variant);
-  color: var(--blue-variant);
+  fill: blue-variant;
+  color: blue-variant;
 }
