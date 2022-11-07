@@ -22,8 +22,9 @@
   &__h2 {
     height: 16px;
     width: 270px;
-    left: 206px;
-    top: 919px;
+    left: 215px;
+    top: 924px;
+    font-family: font-gral;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -34,13 +35,14 @@
   &__p {
     height: 75px;
     width: 270px;
-    left: 815px;
-    top: 801px;
-    font-family: Roboto;
+    left: 515px;
+    top: 950px;
+    font-family: font-gral;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
+    text-align: left;
     color: #757575;
   }
 }
@@ -49,18 +51,18 @@
   margin-bottom: 94px;
   text-align: center;
   &__h2 {
-      height: 42px;
-      width: auto;
-      left: 669px;
-      top: 1604px;
-      font-family: Roboto;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 42px;
-      letter-spacing: 0.03em;
-      padding-top: 94px;
-      padding-bottom: 50px;
-    }
+    height: 42px;
+    width: auto;
+    left: 669px;
+    top: 1604px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
   &__card {
     display: flex;
     flex-direction: column;
