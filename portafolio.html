@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
     <title>Soluciones eficaces para su Negocio</title>
     <link
       rel="stylesheet"
@@ -15,10 +15,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet " href="./css/styles.css " />
+    <link rel="stylesheet " href="./css/main.css " />
+    <!-- <link rel="stylesheet" href="/styles.css"> -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;500;700;900&display=swap ");
     </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+      </style>
     <link
       rel="stylesheet "
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css "
@@ -29,62 +33,63 @@
     <header>
       <nav>
         <div>
-          <p class="web">WebStudio</p>
+          <p class="nav__logo">WebStudio</p>
         </div>
-        <div class="boxactive">
-          <a class="link1" href="index.html ">
-            <p class="estudio">Estudio</p>
+        <div class="nav__box">
+          <a class="nav__link" href="index.html ">
+            <p class="nav__word1">Estudio</p>
           </a>
-          <div class="subrayado-to-left"></div>
+          <div class="nav__underlinetoleft"></div>
         </div>
 
         <div>
-          <p class="portafolio">Portafolio</p>
+          <p class="nav__word2">Portafolio</p>
         </div>
         <div>
-          <p class="contactos">Contactos</p>
+          <p class="nav__word3">Contactos</p>
         </div>
       </nav>
-      <div class="grupo-contacto1">
-        <svg class="icono-correo">
+      <div class="header-left">
+        <div class="header-left__box">
+        <svg class="header-left__iconemail">
           <use href="./images/icons.svg#icon-correo"></use>
         </svg>
-
-        <a class="correo" href="mailto:info@devstudio.com"
+        <a class="header-left__email" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
         >
-      </div>
-      <div class="grupo-contacto1">
-        <svg class="icono-tel">
-          <use href="./images/icons.svg#icon-movil"></use>
+        </div>
+        <div class="header-left__box">
+        <svg class="header-left__icontel">
+          <use href="./images/icons.svg#icon-telefono"></use>
         </svg>
-        <a class="tel" href="tel:+525555296000">+52 5555296000</a>
+        <a class="header-left__tel" href="tel:+525555296000">+52 5555296000</a>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="container">
-        <div class="botones">
-          <button class="primerboton">Todo</button>
-          <button class="sitiosweb">Sitios-Web</button>
-          <button class="aplicaciones">Aplicaciones</button>
-          <button class="diseño">Diseño</button>
-          <button class="marketing">Marketing</button>
+        <div class="buttons-row">
+          <button>Todo</button>
+          <button>Sitios-Web</button>
+          <button>Aplicaciones</button>
+          <button>Diseño</button>
+          <button>Marketing</button>
         </div>
       </section>
 
       <section class="container">
-        <div class="filatarjetas1">
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+        <div class="cardsrow">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/people.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <p class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <p class="cardsrow-card__text">
                   Tecnoduck es una plataforma de distribución de coronavirus de
                   última generación. Las compañías usan esta plataforma para el
                   espionaje digital y los ataques a los servidores seguros de la
@@ -92,20 +97,20 @@
                 </p>
               </div>
             </div>
-            <p class="etiqueta"><b>Tecnoduck</b></p>
-            <p class="etiqueta">Sitio Web</p>
+            <p class="cardsrow-card__label"><b>Tecnoduck</b></p>
+            <p class="cardsrow-card__label">Sitio Web</p>
           </div>
 
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/sports.jpeg "
                 width="370"
                 height="294"
                 alt="Sports"
               />
-              <div class="caja-despliegue">
-                <p class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <p class="cardsrow-card__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Beatae facilis harum ab a amet distinctio, iste sint
                   dignissimos adipisci mollitia doloribus fugit, quisquam
@@ -113,20 +118,20 @@
                 </p>
               </div>
             </div>
-            <p class="etiqueta"><b>Póster de New Orleans vs</b></p>
-            <p class="etiqueta">Estrella Dorada</p>
+            <p class="cardsrow-card__label"><b>Póster de New Orleans vs</b></p>
+            <p class="cardsrow-card__label">Estrella Dorada</p>
           </div>
 
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/seafood.jpeg "
                 width="370"
                 height="294"
                 alt="Restaurant"
               />
-              <div class="caja-despliegue">
-                <p class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <p class="cardsrow-card__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Beatae facilis harum ab a amet distinctio, iste sint
                   dignissimos adipisci mollitia doloribus fugit, quisquam
@@ -134,22 +139,22 @@
                 </p>
               </div>
             </div>
-            <p class="etiqueta"><b>Restaurante Seafood</b></p>
-            <p class="etiqueta">Aplicaciones</p>
+            <p class="cardsrow-card__label"><b>Restaurante Seafood</b></p>
+            <p class="cardsrow-card__label">Aplicaciones</p>
           </div>
         </div>
 
-        <div class="filatarjetas2">
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+        <div class="cardsrow">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/audio.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <p class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <p class="cardsrow-card__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Architecto omnis numquam totam ullam quibusdam molestias ea?
                   Facere modi excepturi quod, nostrum exercitationem minima
@@ -157,20 +162,20 @@
                 </p>
               </div>
             </div>
-            <p class="etiqueta"><b>Proyecto Prime</b></p>
-            <p class="etiqueta">Marketing</p>
+            <p class="cardsrow-card__label"><b>Proyecto Prime</b></p>
+            <p class="cardsrow-card__label">Marketing</p>
           </div>
 
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/boxes.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <p class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <p class="cardsrow-card__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Architecto omnis numquam totam ullam quibusdam molestias ea?
                   Facere modi excepturi quod, nostrum exercitationem minima
@@ -178,20 +183,20 @@
                 </p>
               </div>
             </div>
-            <p class="etiqueta"><b>Proyecto Cajas</b></p>
-            <p class="etiqueta">Aplicaciones</p>
+            <p class="cardsrow-card__label"><b>Proyecto Cajas</b></p>
+            <p class="cardsrow-card__label">Aplicaciones</p>
           </div>
 
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/computer.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <p class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <p class="cardsrow-card__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Architecto omnis numquam totam ullam quibusdam molestias ea?
                   Facere modi excepturi quod, nostrum exercitationem minima
@@ -199,22 +204,24 @@
                 </p>
               </div>
             </div>
-            <p class="etiqueta"><b>La inspiración no tiene límites</b></p>
-            <p class="etiqueta">Sitio Web</p>
+            <p class="cardsrow-card__label">
+              <b>La inspiración no tiene límites</b>
+            </p>
+            <p class="cardsrow-card__label">Sitio Web</p>
           </div>
         </div>
 
-        <div class="filatarjetas3">
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+        <div class="cardsrow">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/magazine.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <div class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <div class="cardsrow-card__text">
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Nostrum, tempora ipsa magnam tempore numquam qui labore
@@ -224,20 +231,20 @@
                 </div>
               </div>
             </div>
-            <p class="etiqueta"><b>Edición Limitada</b></p>
-            <p class="etiqueta">Diseño</p>
+            <p class="cardsrow-card__label"><b>Edición Limitada</b></p>
+            <p class="cardsrow-card__label">Diseño</p>
           </div>
 
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/tag.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <div class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <div class="cardsrow-card__text">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. A
                     optio aspernatur eveniet dicta nostrum iusto asperiores
@@ -247,20 +254,20 @@
                 </div>
               </div>
             </div>
-            <p class="etiqueta"><b>Proyecto LAB</b></p>
-            <p class="etiqueta">Sitio Web</p>
+            <p class="cardsrow-card__label"><b>Proyecto LAB</b></p>
+            <p class="cardsrow-card__label">Sitio Web</p>
           </div>
 
-          <div class="tarjeta2">
-            <div class="caja-ventana">
+          <div class="cardsrow-card">
+            <div class="cardsrow-card__window">
               <img
                 src="./images/laptop2.jpeg "
                 width="370"
                 height="294"
                 alt="People"
               />
-              <div class="caja-despliegue">
-                <div class="texto-despliegue">
+              <div class="cardsrow-card__slide">
+                <div class="cardsrow-card__text">
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Vitae facere numquam perspiciatis quidem recusandae, dolore
@@ -270,100 +277,107 @@
                 </div>
               </div>
             </div>
-            <p class="etiqueta"><b>Negocio de crecimiento</b></p>
-            <p class="etiqueta">Aplicaciones</p>
+            <p class="cardsrow-card__label"><b>Negocio de crecimiento</b></p>
+            <p class="cardsrow-card__label">Aplicaciones</p>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <h2 class="web-final">WebStudio</h2>
-      <address>
-        <ul class="direccion">
+      <h2 class="footer__logo">WebStudio</h2>
+      <address class="footer-address">
+        <ul>
           <li>
-            <p class="lugar">
+            <p class="footer-adress__place footer-address__place--color">
               Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
             </p>
           </li>
           <li>
-            <a href="mailto:info@example.com " class="info">info@example.com</a>
+            <a
+              href="mailto:info@example.com "
+              class="footer-address__info footer-adress__info--color"
+              >info@example.com</a
+            >
           </li>
           <li>
-            <a href="tel:+525555296000 " class="info">+52 55 5529 6000</a>
+            <a
+              href="tel:+525555296000 "
+              class="footer-adress__info footer-adress__info--color"
+              >+52 55 5529 6000</a
+            >
           </li>
         </ul>
         <div>
           <div>
-            <p class="encuentrenos"><b>ENCUENTRENOS EN</b></p>
+            <p class="footer__find"><b>ENCUENTRENOS EN</b></p>
           </div>
-          <div class="fila-icons-piepagina">
-            <svg class="icon-p">
+          <div class="footer-iconsrow">
+            <svg class="footer-iconsrow__icon">
               <use
-                href="./images/icons.svg#icon-icon-instagram"
+                href="./images/icons.svg#icon-icon-instagram "
                 width="22px"
                 height="22px"
-                x="10"
-                y="10"
+                x="10 "
+                y="10 "
               ></use>
             </svg>
-            <svg class="icon-p">
+            <svg class="footer-iconsrow__icon">
               <use
-                href="./images/icons.svg#icon-icon-twitter"
+                href="./images/icons.svg#icon-icon-twitter "
                 width="22px"
                 height="22px"
-                x="10"
-                y="10"
+                x="10 "
+                y="10 "
               ></use>
             </svg>
-            <svg class="icon-p">
+            <svg class="footer-iconsrow__icon">
               <use
-                href="./images/icons.svg#icon-icon-facebook"
+                href="./images/icons.svg#icon-icon-facebook "
                 width="22px"
                 height="22px"
-                x="10"
-                y="10"
+                x="10 "
+                y="10 "
               ></use>
             </svg>
-            <svg class="icon-p">
+            <svg class="footer-iconsrow__icon">
               <use
-                href="./images/icons.svg#icon-icon-linkedin"
+                href="./images/icons.svg#icon-icon-linkedin "
                 width="22px"
                 height="22px"
-                x="10"
-                y="10"
+                x="10 "
+                y="10 "
               ></use>
             </svg>
           </div>
         </div>
-        <div class="caja-suscripcion">
+        <div class="footer-suscription">
           <form>
             <div>
-              <label class="title-form-footer"
-                >SUSCRÍBASE AL BOLETÍN INFORMATIVO</label
+              <label class="footer-suscription__label">
+                SUSCRÍBASE AL BOLETÍN INFORMATIVO</label
               >
             </div>
             <div>
-              <input
-                class="form-control"
-                type:"email"
-                nombre="Email"
-                required
-                pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
-                placeholder="Correo Electrónico"
-              />
+              <input class="footer-suscription__input" type:"email" name="Email"
+              required
+              pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+              placeholder="Correo Electrónico"
             </div>
             <div>
-              <button class="boton-suscripcion">
-                <h3 class="texto-boton">Suscríbase</h3>
-                <svg class="fly">
+              <button
+                type="submit"
+                value="submit"
+                class="footer-suscription-button"
+              >
+                <h3 class="footer-suscription-button__text">Suscríbase</h3>
+                <svg class="footer-suscription-button__icon">
                   <use href="./images/icons.svg#icon-enviar-icono"></use>
                 </svg>
               </button>
             </div>
           </form>
         </div>
-       
       </address>
     </footer>
   </body>

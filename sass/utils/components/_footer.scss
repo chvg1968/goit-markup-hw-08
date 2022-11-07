@@ -1,0 +1,134 @@
+// Elementos del footer
+
+.footer {
+  height: 252px;
+  width: 100%;
+  left: 0px;
+  top: 1628px;
+  border-radius: 0px;
+  background-color: background-footer;
+  &__find {
+    height: 16px;
+    width: 136px;
+    left: 516px;
+    top: 1703px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-left: 156px;
+    margin-top: -12px;
+    color: white-color;
+  }
+  &__logo {
+    height: 31px;
+    width: 145px;
+    left: 215px;
+    top: 2739px;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: blue-variant;
+    padding-top: 60px;
+    margin-left: 215px;
+  }
+}
+
+
+
+.footer-address {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 170px;
+  &__place--color {
+    color: white-color;
+  }
+  &__info--color {
+    color: #ffffff99;
+  }
+}
+
+.footer-iconsrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 156px;
+  &__icon {
+    height: 44px;
+    width: 44px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100px;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: white-color;
+    margin-right: 10px;
+  }
+  &__icon:hover {
+    cursor: pointer;
+    background-color: blue-variant;
+  }
+}
+
+.footer-suscription {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 830px;
+  margin-top: -12px;
+  &__input {
+    position: relative;
+    height: 50px;
+    width: 358px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #ffffff99;
+    background: #2f303a;
+    border: 1px solid #ffffff4d;
+    padding-left: 16px;
+    cursor: pointer;
+  }
+  &__label {
+    position: relative;
+    height: 16px;
+    width: 275px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white-color;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+}
+.footer-suscription-button {
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    fill: white-color;
+  }
+  &__text {
+    height: 30px;
+    width: 89px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white-color;
+  }
+}
