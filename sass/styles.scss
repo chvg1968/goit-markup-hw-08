@@ -1,13 +1,13 @@
-@use "components/_variables.scss";
-@use "components/_header.scss";
-@use "components/_modal.scss";
-@use "components/_form.scss";
-@use "components/_cardsbusiness.scss";
-@use "components/_cardspeople.scss";
-@use "components/_values.scss";
-@use "components/_buttons.scss";
-@use "components/_clients.scss";
-@use "components/_footer.scss";
+@use "./utils/components/variables";
+@use "./utils/components/header";
+@use "./utils/components/modal";
+@use "./utils/components/form";
+@use "./utils/components/cardsbusiness";
+@use "./utils/components/cardspeople";
+@use "./utils/components/values";
+@use "./utils/components/buttons";
+@use "./utils/components/clients";
+@use "utils/components/footer";
 
 
 *,
