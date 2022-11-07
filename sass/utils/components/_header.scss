@@ -1,169 +1,182 @@
-// Elementos del header
 header {
+  /* position: absolute; */
   width: 1200px;
   height: 80px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*----------------------------------------Títulos,párrafos*/
+
+/*------------------------------------------Encabezado*/
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   height: 80px;
   width: 600px;
-  left: 0px;
-  top: 80px;
-  &__logo {
-    height: 31px;
-    width: 145px;
-    left: 215px;
-    top: 24px;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: blue-variant;
-    margin-left: -60px;
-  }
-  &__link {
-    text-decoration: none;
-  
-  }
-  &__word1 {
-    height: 16px;
-    width: 49px;
-    left: 453px;
-    top: 32px;
-    font-family: font;
-    font-weight: font-gral;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-right: 37.5px;
-    &:hover {
-      cursor: pointer;
-      color: blue-variant;
-    }
-  }
-  &__word2 {
-    height: 16px;
-    width: 65px;
-    left: 552px;
-    top: 32px;
-    font-family: font-gral;
-    font-weight: fontweight;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-right: 46.5px;
-    &:hover {
-      color: blue-variant;
-    }
-  }
-  &__word3 {
-    height: 16px;
-    width: 67px;
-    left: 667px;
-    top: 32px;
-    font-family: font;
-    font-size: 14px;
-    font-weight: font-gral;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    &:hover {
-      color: blue-variant;
-    }
-  } 
-  &__underlinetoright {
-    content: "";
-    width: 48px;
-    height: 4px;
-    margin-top: -4px;
-    display: block;
-    background-color: blue-variant;
-    margin-left: -140px;
-    transition: transform 1s;
-  }
-  &__underlinetoleft {
-    content: "";
-    width: 48px;
-    height: 4px;
-    margin-top: -4px;
-    display: block;
-    background-color: blue-variant;
-    transform: translateX(147px);
-    transition: transform 1s;
-  }
-  &__box:hover {
-    .nav__underlinetoright {
-      transform: translateX(147px);
-    }
-    .nav__underlinetoleft {
-      cursor: pointer;
-      transform: translateX(0px);
-    }
-  }
 }
 
-.header-box {
-  // width: 50%;
-  // height: 80px;
-  // border: solid 2px red;
-  &:hover * {
-    fill: blue-variant;
-    color: blue-variant;
-  }
-  &__email {
-    height: 12px;
-    width: 16px;
-    left: 1052px;
-    top: 34px;
-    border-radius: 0px;
-    margin-left: 270px;
-    margin-right: 5px;
-  }
-  &__iconemail {
-    height: 12px;
-    width: 16px;
-    left: 1052px;
-    top: 34px;
-    border-radius: 0px;
-    margin-left: 270px;
-    margin-right: 5px;
-  }
-  &__icontel {
-    height: 16px;
-    width: 10px;
-    left: 1243px;
-    top: 32px;
-    border-radius: 0px;
-    margin-left: 30px;
-    margin-right: 5px;
-  }
-  &__tel {
-    height: 16px;
-    width: 118px;
-    left: 1263px;
-    top: 32px; 
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #757575;
-  }
+.nav__logo {
+  height: 31px;
+  width: 145px;
+  left: 215px;
+  top: 24px;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--blue-variant);
+  margin-left: -60px;
+}
+
+.nav__word1 {
+  height: 16px;
+  width: 49px;
+  left: 453px;
+  top: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 37.5px;
+}
+
+.nav__word1:hover {
+  cursor: pointer;
+  color: var(--blue-variant);
+}
+
+.nav__word2 {
+  height: 16px;
+  width: 65px;
+  left: 552px;
+  top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 46.5px;
+}
+
+.nav__word2:hover {
+  cursor: pointer;
+  color: var(--blue-variant);
+}
+
+.nav__underlinetoright{
+  content: "";
+  width: 48px;
+  height: 4px;
+  margin-top: -4px;
+  display: block;
+  background-color: var(--blue-variant);
+  margin-left:-140px; 
+  transition: transform 1s;
+}
+
+.nav__box:hover .nav__underlinetoright {
+  transform: translateX(147px);
+}
+
+.nav__underlinetoleft {
+  content: "";
+  width: 48px;
+  height: 4px;
+  margin-top: -4px;
+  display: block;
+  background-color: var(--blue-variant);
+  transform:translateX(147px);
+  transition: transform 1s;
+}
+
+.nav__box:hover .nav__underlinetoleft {
+  cursor: pointer;
+  transform: translateX(0px);
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__word3 {
+  height: 16px;
+  width: 67px;
+  left: 667px;
+  top: 32px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.nav__word3:hover {
+  color: var(--blue-variant);
+}
+
+.header-left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 265px;
+  gap:30px;
+}
+
+.header-left__iconemail{
+  height: 12px;
+  width: 16px;
+  left: 1048px;
+  top: 34px;
+  border-radius: 0px;
+}
+
+.header-left__email {
+  height: 16px;
+  width: 135px;
+  left: 1078px;
+  top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+
+.header-left__icontel {
+  height: 15px;
+  width: 20px;
+  left: 1243px;
+  top: 32px;
+  border-radius: 0px;
+}
+
+.header-left__tel {
+  height: 16px;
+  width: 118px;
+  left: 1263px;
+  top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-left__box:hover * {
+  fill: var(--blue-variant);
+  color: var(--blue-variant);
 }
