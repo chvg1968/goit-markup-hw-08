@@ -1,5 +1,7 @@
+@use 'variables';
+
 @mixin cards-letterIn {
-  font-family: Roboto;
+  font-family: variables.$font-gral;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -42,7 +44,7 @@
       text-align: justify;
       margin-left: 24px;
       margin-top: 63px;
-      background: white-color;
+      color: variables.$white-color;
       @include cards-letterIn;
       
     }

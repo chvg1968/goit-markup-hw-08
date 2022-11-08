@@ -1,9 +1,11 @@
+@use 'variables';
+
 .modal {
   position: absolute;
   height: 581px;
   width: 528px;
   border-radius: 4px;
-  background: white-color;
+  background: variables.$white-color;
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -25,7 +27,7 @@
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background: white-color;
+    background: variables.$white-color;
     border: 1px solid #0000001a;
     color: black;
     text-align: center;
@@ -44,12 +46,12 @@
     line-height: 14px;
     letter-spacing: 0.01em;
     text-align: left;
-    color: color-etiqueta-form;
+    color: variables.$color-etiqueta-form;
   }
   &__data {
     &:hover {
       cursor: pointer;
-      border: 1px solid blue-variant;
+      border: 1px solid variables.$blue-variant;
     }
   }
   &__group {

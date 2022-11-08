@@ -1,9 +1,12 @@
+@use 'variables';
+
+
 .clients {
     height: 372px;
     left: 0px;
     top: 1599px;
     border-radius: 0px;
-    background: white-color;
+    background: variables.$white-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,8 +38,8 @@
         fill: #afb1b8;
   &:hover{
     cursor: pointer;
-    fill: blue-variant;
-    border: solid 1px blue-variant;
+    fill:variables.$blue-variant;
+    border: solid 1px variables.$blue-variant;
 }
     }
    

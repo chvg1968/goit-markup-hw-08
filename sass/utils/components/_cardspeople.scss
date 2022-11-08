@@ -1,3 +1,5 @@
+@use 'variables';
+
 .cards {
   height: 648px;
   width: 1200px;
@@ -52,8 +54,8 @@
     fill: #afb1b8;
     &:hover {
       cursor: pointer;
-      background-color: blue-variant;
-      fill: white-color;
+      background-color: variables.$blue-variant;
+      fill: variables.$white-color;
     }
   }
   &__iconsrow {

@@ -1,3 +1,5 @@
+@use 'variables';
+
 header {
   width: 1200px;
   height: 80px;
@@ -30,7 +32,7 @@ nav {
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: blue-variant;
+  color:variables.$blue-variant;
   margin-left: -60px;
 }
 
@@ -48,7 +50,7 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: color-header-letter;
+  color: variables.$color-header-letter;
 }
 
 .nav__word1 {
@@ -71,7 +73,7 @@ nav {
 
 .nav__word2:hover {
   cursor: pointer;
-  color: blue-variant;
+  color: variables.$blue-variant;
 }
 
 @mixin underline-format{
@@ -80,7 +82,7 @@ nav {
   height: 4px;
   margin-top: -4px;
   display: block;
-  background-color: blue-variant;
+  background-color: variables.$blue-variant;
   transition: transform 1s;
 }
 
@@ -111,7 +113,7 @@ nav {
 
 
 .nav__word3:hover {
-  color: blue-variant;
+  color: variables.$blue-variant;
 }
 
 .header-left{
@@ -148,6 +150,6 @@ nav {
 }
 
 .header-left__box:hover * {
-  fill: blue-variant;
-  color: blue-variant;
+  fill: variables.$blue-variant;
+  color: variables.$blue-variant;
 }
