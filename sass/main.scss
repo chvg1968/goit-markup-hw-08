@@ -1,0 +1,36 @@
+@use "./utils/components/variables";
+@use "./utils/components/header";
+@use "./utils/components/modal";
+@use "./utils/components/form";
+@use "./utils/components/cardsbusiness";
+@use "./utils/components/cardspeople";
+@use "./utils/components/values";
+@use "./utils/components/buttons";
+@use "./utils/components/clients";
+@use "./utils/components/footer";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+

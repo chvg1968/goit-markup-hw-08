@@ -243,12 +243,17 @@ nav {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
+  border: none;
+}
+.box__button:hover {
+  cursor: pointer;
 }
 .box__title {
   font-size: 44px;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.06em;
+  font-family: Roboto;
   color: white;
 }
 
@@ -270,36 +275,40 @@ nav {
 .boxform {
   text-align: left;
 }
-.boxform__check {
+.boxform__title {
+  font-family: Roboto;
+  margin-top: 38.5px;
+}
+.boxform__input {
   position: relative;
-}
-.boxform__closeicon {
-  position: absolute;
-  top: 8px;
-  left: 490px;
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1019607843);
-  color: black;
-  text-align: center;
-  font-size: 22px;
-}
-.boxform__comments {
   margin-top: 12px;
 }
-.boxform__commentslabel {
+.boxform__label {
   height: 14px;
-  width: 70px;
+  width: 44px;
   left: 576px;
-  top: 500px;
+  top: 296px;
+  font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.01em;
   text-align: left;
   color: #757575;
+}
+.boxform__hover:hover {
+  border: none;
+  fill: #2196f3;
+}
+.boxform__data {
+  height: 40px;
+  width: 448px;
+  left: 576px;
+  top: 314px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  font-family: Roboto;
 }
 .boxform__data:hover {
   cursor: pointer;
@@ -315,10 +324,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.boxform__hover:hover {
-  border: none;
-  fill: blue-variant;
-}
 .boxform__icon {
   position: relative;
   top: 0px;
@@ -326,42 +331,21 @@ nav {
   width: 12px;
   height: 12px;
 }
-.boxform__input {
-  position: relative;
+.boxform__comments {
   margin-top: 12px;
 }
-.boxform__label {
+.boxform__commentslabel {
   height: 14px;
-  width: 44px;
+  width: 70px;
   left: 576px;
-  top: 296px;
+  top: 500px;
+  font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.01em;
   text-align: left;
-  color: color-etiqueta-form;
-}
-.boxform__slabel {
-  margin-top: -22px;
-  margin-left: 18px;
-}
-.boxform__submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.boxform__summitlabel {
-  height: 24px;
-  width: 401px;
-  left: 612px;
-  top: 658px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: color-etiqueta-form;
+  color: #757575;
 }
 .boxform__textarea {
   height: 120px;
@@ -369,17 +353,58 @@ nav {
   left: 576px;
   top: 518px;
   border-radius: 4px;
-  border: 1px solid color-border-input;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 16px;
   padding-top: 12px;
+  font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.01em;
   text-align: left;
 }
-.boxform__title {
-  margin-top: 38.5px;
+.boxform__check {
+  position: relative;
+}
+.boxform__slabel {
+  margin-top: -22px;
+  margin-left: 18px;
+}
+.boxform__summitlabel {
+  height: 24px;
+  width: 401px;
+  left: 612px;
+  top: 658px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+}
+.boxform__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxform__closeicon {
+  position: absolute;
+  top: 8px;
+  left: 490px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  color: black;
+  text-align: center;
+  font-size: 22px;
+}
+.boxform__closeicon:hover {
+  cursor: pointer;
+  background: #2196f3;
+  color: white;
 }
 
 .cardsrow {
@@ -475,6 +500,7 @@ nav {
   top: 1696px;
   border-radius: 2%;
   background: #ffffff;
+  font-family: Roboto;
 }
 .cards-card:hover {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -596,7 +622,7 @@ nav {
   font-family: Roboto;
 }
 
-button {
+.buttons__btn {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -616,7 +642,7 @@ button {
   background: #f5f4fa;
   cursor: pointer;
 }
-button:hover {
+.buttons__btn:hover {
   cursor: pointer;
   background-color: #2196f3;
   color: white;
@@ -625,7 +651,7 @@ button:hover {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
 
-.buttons-row {
+.buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -651,6 +677,7 @@ button:hover {
   width: 329px;
   left: 640px;
   top: 2366px;
+  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
@@ -800,11 +827,22 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.footer-suscription-button {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 50px;
+  margin-left: 370px;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-suscription-button__icon {
   width: 24px;
   height: 24px;
   margin-left: 20px;
-  fill: white;
 }
 .footer-suscription-button__text {
   font-family: Roboto;
@@ -813,9 +851,14 @@ button:hover {
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
   height: 30px;
   width: 89px;
+}
+.footer-suscription-button:hover {
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  fill: white;
 }
 
 *,

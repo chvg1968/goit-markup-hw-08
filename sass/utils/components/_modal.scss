@@ -47,12 +47,17 @@
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0.06em;
+        border:none;
+        &:hover{
+            cursor:pointer;
+        }
     }
     &__title {
         font-size: 44px;
         font-weight: 900;
         line-height: 60px;
         letter-spacing: 0.06em;
+        font-family: variables.$font-gral;
         color: variables.$white-color;
     }
   }
