@@ -1,4 +1,4 @@
-@use 'variables';
+@import "../variables";
 
 
 .clients {
@@ -6,7 +6,7 @@
     left: 0px;
     top: 1599px;
     border-radius: 0px;
-    background: variables.$white-color;
+    background: $white-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
         width: 329px;
         left: 640px;
         top: 2366px;
-        font-family: variables.$font-gral;
+        font-family: $font-gral;
         font-size: 36px;
         font-weight: 700;
         line-height: 42px;
@@ -39,8 +39,8 @@
         fill: #afb1b8;
   &:hover{
     cursor: pointer;
-    fill:variables.$blue-variant;
-    border: solid 1px variables.$blue-variant;
+    fill:$blue-variant;
+    border: solid 1px $blue-variant;
 }
     }
    

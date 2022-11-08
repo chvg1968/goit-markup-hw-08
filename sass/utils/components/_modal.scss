@@ -1,4 +1,5 @@
-@use 'variables';
+// ----------Ventana Modal
+@import "../variables";
 
 .box {
     height: 600px;
@@ -12,7 +13,7 @@
     align-items: center;
     margin-bottom: 94px;
     text-align: center;
-    color: variables.$white-color;
+    color: $white-color;
     &__backdrop {
         position: fixed;
         top: 0;
@@ -40,8 +41,8 @@
         top: 430px;
         border-radius: 4px;
         padding: 10px 32px 10px 32px;
-        background-color:variables.$blue-variant;
-        color: variables.$white-color;
+        background-color:$blue-variant;
+        color: $white-color;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 700;
@@ -57,8 +58,8 @@
         font-weight: 900;
         line-height: 60px;
         letter-spacing: 0.06em;
-        font-family: variables.$font-gral;
-        color: variables.$white-color;
+        font-family: $font-gral;
+        color: $white-color;
     }
   }
 

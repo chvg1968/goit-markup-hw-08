@@ -1,10 +1,8 @@
 // Elementos del footer
-@use 'variables';
-
-
+@import "../variables";
 
 @mixin footer-findLetter {
-  font-family: variables.$font-gral;
+  font-family: $font-gral;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -13,7 +11,7 @@
 }
 
 @mixin footer-placetext {
-  font-family: variables.$font-gral;
+  font-family: $font-gral;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -23,7 +21,7 @@
 }
 
 @mixin footer-buttonText {
-  font-family: variables.$font-gral;
+  font-family: $font-gral;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -37,7 +35,7 @@
   left: 0px;
   top: 1628px;
   border-radius: 0px;
-  background-color: variables.$background-footer;
+  background-color: $background-footer;
   &__find {
     @include footer-findLetter;
     height: 16px;
@@ -46,7 +44,7 @@
     top: 1703px;
     margin-left: 156px;
     margin-top: -12px;
-    color: variables.$white-color;
+    color: $white-color;
   }
   &__logo {
     height: 31px;
@@ -59,7 +57,7 @@
     line-height: 31px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: variables.$blue-variant;
+    color: $blue-variant;
     padding-top: 60px;
     margin-left: 215px;
   }
@@ -72,7 +70,7 @@
   margin-left: 170px;
   @include footer-placetext;
   &__place--color {
-    color: variables.$white-color;
+    color: $white-color;
   }
   &__info--color {
     color: #ffffff99;
@@ -92,12 +90,12 @@
     border-radius: 100px;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: variables.$white-color;
+    fill: $white-color;
     margin-right: 10px;
   }
   &__icon:hover {
     cursor: pointer;
-    background-color: variables.$blue-variant;
+    background-color: $blue-variant;
   }
 }
 
@@ -128,7 +126,7 @@
     cursor: pointer;
   }
   &__label {
-    font-family: variables.$font-gral;
+    font-family: $font-gral;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -137,7 +135,7 @@
     position: relative;
     height: 16px;
     width: 275px;
-    color: variables.$white-color;
+    color: $white-color;
     text-decoration: none;
     margin-bottom: 20px;
   }
@@ -156,6 +154,8 @@
   display:flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+  border-style: none;
   &__icon {
     width: 24px;
     height: 24px;
@@ -169,8 +169,8 @@
   }
   &:hover{
     cursor: pointer;
-    background-color: variables.$blue-variant;
-    color:variables.$white-color;
-    fill: variables.$white-color;
+    background-color: $blue-variant;
+    color:$white-color;
+    fill: $white-color;
   }
 }

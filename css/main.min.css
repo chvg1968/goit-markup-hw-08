@@ -86,7 +86,7 @@ nav {
 
 .nav__word1:hover {
   cursor: pointer;
-  color: blue-variant;
+  color: #2196f3;
 }
 
 .nav__word2:hover {
@@ -838,6 +838,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+  border-style: none;
 }
 .footer-suscription-button__icon {
   width: 24px;
@@ -882,4 +884,4 @@ ul {
   list-style: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.min.css.map */

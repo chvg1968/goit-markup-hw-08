@@ -1,8 +1,8 @@
-@use 'variables';
-
+//Formato botones
+@import "../variables";
 
 @mixin button-letter {
-  font-family: variables.$font-gral;
+  font-family: $font-gral;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -26,8 +26,8 @@
   cursor: pointer;
   &:hover {
     cursor: pointer;
-    background-color:variables.$blue-variant;
-    color: variables.$white-color;
+    background-color:$blue-variant;
+    color: $white-color;
     box-shadow: 0px 2px 2px 0px #0000001f;
     box-shadow: 0px 1px 2px 0px #00000014;
     box-shadow: 0px 3px 1px 0px #0000001a;

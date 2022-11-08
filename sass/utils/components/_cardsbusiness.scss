@@ -1,7 +1,9 @@
-@use 'variables';
+//Tarjetas de negocios
+
+@import "../variables";
 
 @mixin cards-letterIn {
-  font-family: variables.$font-gral;
+  font-family: $font-gral;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -44,7 +46,7 @@
       text-align: justify;
       margin-left: 24px;
       margin-top: 63px;
-      color: variables.$white-color;
+      color: $white-color;
       @include cards-letterIn;
       
     }

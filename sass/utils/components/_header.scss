@@ -1,4 +1,5 @@
-@use 'variables';
+// -------------------------Encabezado
+@import "../variables";
 
 header {
   width: 1200px;
@@ -32,7 +33,7 @@ nav {
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color:variables.$blue-variant;
+  color:$blue-variant;
   margin-left: -60px;
 }
 
@@ -50,7 +51,7 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: variables.$color-header-letter;
+  color: $color-header-letter;
 }
 
 .nav__word1 {
@@ -67,13 +68,13 @@ nav {
 
 .nav__word1:hover {
   cursor: pointer;
-  color: blue-variant;
+  color: $blue-variant;
 }
 
 
 .nav__word2:hover {
   cursor: pointer;
-  color: variables.$blue-variant;
+  color: $blue-variant;
 }
 
 @mixin underline-format{
@@ -82,7 +83,7 @@ nav {
   height: 4px;
   margin-top: -4px;
   display: block;
-  background-color: variables.$blue-variant;
+  background-color: $blue-variant;
   transition: transform 1s;
 }
 
@@ -113,7 +114,7 @@ nav {
 
 
 .nav__word3:hover {
-  color: variables.$blue-variant;
+  color: $blue-variant;
 }
 
 .header-left{
@@ -150,6 +151,6 @@ nav {
 }
 
 .header-left__box:hover * {
-  fill: variables.$blue-variant;
-  color: variables.$blue-variant;
+  fill:$blue-variant;
+  color:$blue-variant;
 }
