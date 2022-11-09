@@ -10,6 +10,7 @@ header {
   border-bottom: 1px solid #ececec;
   margin-left: auto;
   margin-right: auto;
+  animation: header-mov 250ms ease-in;
 }
 
 /*----------------------------------------Títulos,párrafos*/
@@ -35,6 +36,8 @@ nav {
   letter-spacing: 0.03em;
   color:$blue-variant;
   margin-left: -60px;
+  // transform:translateX(-1000%);
+  animation: logo-mov 300ms ease-in; 
 }
 
 @mixin header-letter($width, $left, $marginright) {
@@ -153,4 +156,28 @@ nav {
 .header-left__box:hover * {
   fill:$blue-variant;
   color:$blue-variant;
+}
+
+@keyframes header-mov {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+    
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-mov {
+  0% {
+    transform: translateX(-1000%);
+    
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

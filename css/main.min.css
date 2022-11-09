@@ -8,6 +8,7 @@ header {
   border-bottom: 1px solid #ececec;
   margin-left: auto;
   margin-right: auto;
+  animation: header-mov 250ms ease-in;
 }
 
 /*----------------------------------------Títulos,párrafos*/
@@ -31,6 +32,7 @@ nav {
   letter-spacing: 0.03em;
   color: #2196f3;
   margin-left: -60px;
+  animation: logo-mov 300ms ease-in;
 }
 
 .nav__word1 {
@@ -196,6 +198,24 @@ nav {
   color: #2196f3;
 }
 
+@keyframes header-mov {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes logo-mov {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .box {
   height: 600px;
   left: -4px;
