@@ -13,13 +13,6 @@ header {
 
 /*----------------------------------------Títulos,párrafos*/
 /*------------------------------------------Encabezado*/
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  height: 80px;
-  width: 600px;
-}
-
 .nav__logo {
   height: 31px;
   width: 145px;
@@ -31,8 +24,20 @@ nav {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-left: -60px;
   animation: logo-mov 300ms ease-in;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 40px;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  width: 600px;
 }
 
 .nav__word1 {
@@ -104,11 +109,11 @@ nav {
   display: block;
   background-color: #2196f3;
   transition: transform 1s;
-  margin-left: -140px;
+  margin-left: -170px;
 }
 
 .nav__box:hover .nav__underlinetoright {
-  transform: translateX(147px);
+  transform: translateX(170px);
 }
 
 .nav__underlinetoleft {
@@ -119,7 +124,7 @@ nav {
   display: block;
   background-color: #2196f3;
   transition: transform 1s;
-  transform: translateX(147px);
+  transform: translateX(173px);
 }
 
 .nav__box:hover .nav__underlinetoleft {
@@ -139,7 +144,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 265px;
+  margin-left: 85px;
   gap: 30px;
 }
 
@@ -444,8 +449,14 @@ nav {
   border: 1px solid #eeeeee;
   margin-right: 30px;
 }
-.cardsrow-card__label {
+.cardsrow-card__label1 {
+  font-family: Roboto;
   margin-left: 24px;
+}
+.cardsrow-card__label2 {
+  font-family: Roboto;
+  margin-left: 24px;
+  color: #757575;
 }
 .cardsrow-card__slide {
   position: absolute;
@@ -895,7 +906,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }

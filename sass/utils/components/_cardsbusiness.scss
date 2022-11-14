@@ -27,8 +27,14 @@
     background: #ffffff;
     border: 1px solid #eeeeee;
     margin-right: 30px;
-    &__label {
+    &__label1 {
+      font-family: $font-gral;
       margin-left: 24px;
+    }
+    &__label2{
+      font-family: $font-gral;
+      margin-left: 24px;
+      color:#757575;
     }
     &__slide {
       position: absolute;

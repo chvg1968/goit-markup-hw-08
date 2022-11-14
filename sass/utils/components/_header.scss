@@ -16,14 +16,6 @@ header {
 /*----------------------------------------Títulos,párrafos*/
 
 /*------------------------------------------Encabezado*/
-
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  height: 80px;
-  width: 600px;
-}
-
 .nav__logo {
   height: 31px;
   width: 145px;
@@ -35,9 +27,20 @@ nav {
   line-height: 31px;
   letter-spacing: 0.03em;
   color:$blue-variant;
-  margin-left: -60px;
-  // transform:translateX(-1000%);
   animation: logo-mov 300ms ease-in; 
+}
+
+.navbar{
+  display: flex;
+  margin-left: 40px;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  width: 600px;
 }
 
 @mixin header-letter($width, $left, $marginright) {
@@ -92,17 +95,17 @@ nav {
 
 .nav__underlinetoright{
   @include underline-format;
-  margin-left:-140px; 
+  margin-left:-170px; 
   
 }
 
 .nav__box:hover .nav__underlinetoright {
-  transform: translateX(147px);
+  transform: translateX(170px);
 }
 
 .nav__underlinetoleft {
   @include underline-format;
-  transform:translateX(147px);
+  transform:translateX(173px);
   
 }
 
@@ -124,7 +127,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 265px;
+  margin-left: 85px;
   gap:30px;
 }
 
