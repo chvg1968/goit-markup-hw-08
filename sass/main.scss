@@ -8,6 +8,7 @@
 @use "./utils/components/buttons";
 @use "./utils/components/clients";
 @use "./utils/components/footer";
+@use "./utils/components/mobil-menu";
 
 
 
@@ -26,6 +27,12 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+img{
+  display:block;
+  max-width:100%;
+  height: auto;
 }
 
 
