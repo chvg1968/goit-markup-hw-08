@@ -231,7 +231,10 @@ nav {
   top: 80px;
   border-radius: 0px;
   background-image: url("../images/Imagenfondo.jpeg");
-  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -577,14 +580,10 @@ nav {
   border-radius: 4px;
   background: #f5f4fa;
 }
-
-.articles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: left;
-  margin-bottom: 99px;
+.valuecards__valuecard {
+  flex-direction: column;
 }
+
 .articles__h2 {
   height: 16px;
   width: 270px;
@@ -595,7 +594,7 @@ nav {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   color: #212121;
 }
 .articles__p {
@@ -608,7 +607,7 @@ nav {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: justify;
   color: #757575;
 }
 
@@ -909,19 +908,40 @@ nav {
   .navbar {
     display: none;
   }
-  .menu-toggle {
-    display: block;
+  .valuecards {
+    flex-direction: column;
   }
-  .menu-container {
-    display: flex;
+  .cards {
+    height: 2761px;
+    width: 480px;
+    left: 0px;
+    top: 1574px;
+    border-radius: 0px;
+  }
+  .cards__title {
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+  .cards__people {
+    margin-top: 330px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .cards__card {
+    height: auto;
+    width: auto;
+    left: 15px;
+    border-radius: [object Object] px;
+  }
+  .images {
+    display: none;
   }
 }
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -931,26 +951,21 @@ nav {
   outline: none;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 480px;
+  height: 796px;
   padding: 32px;
   background-color: white;
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .menu-container .menu-toggle {

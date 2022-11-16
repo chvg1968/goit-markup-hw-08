@@ -31,21 +31,21 @@
       <div>
         <p class="nav__logo"><span class="logo-blackletter">Web</span>Studio</p>
       </div>
-<!-- Inicio del menú que debe colapsarse  -->
+      <!-- Inicio del menú que debe colapsarse  -->
       <div class="navbar">
         <nav class="nav">
           <div>
-              <p class="nav__word1">Estudio</p>
-            </div>
-            <div class="nav__box">
-              <a class="nav__link" href="portafolio.html">
+            <p class="nav__word1">Estudio</p>
+          </div>
+          <div class="nav__box">
+            <a class="nav__link" href="portafolio.html">
               <p class="nav__word2">Portafolio</p>
-              </a>
-              <div class="nav__underlinetoright"></div>
-            </div>
-            <div>
-              <p class="nav__word3">Contactos</p>
-            </div>
+            </a>
+            <div class="nav__underlinetoright"></div>
+          </div>
+          <div>
+            <p class="nav__word3">Contactos</p>
+          </div>
         </nav>
 
         <div class="header-left">
@@ -66,32 +66,31 @@
             >
           </div>
         </div>
-<!-- Botón que por defecto está oculto y abre el menú responsive -->
-        
       </div>
+      <!-- Botón que por defecto está oculto y abre el menú responsive -->
       <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="icon-menu"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
     </header>
 
-<!-- Se abre menú responsivo  -->
+    <!-- Se abre menú responsivo  -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -109,31 +108,27 @@
         </svg>
       </button>
       <div class="mobile-menu">
-              <div>
-                <p class="link">Estudio</p>
-              </div>
-              <div>
-                <a href="portafolio.html">
-                <p class="link">Portafolio</p>
-                </a>
-              </div>
-              <div>
-                <p class="link">Contactos</p>
-              </div>
-            <div>
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </div>
-            <div>
-              <a class="link" href="tel:+525555296000"
-                >+52 5555296000</a
-              >
-            </div>
+        <div>
+          <p class="link">Estudio</p>
+        </div>
+        <div>
+          <a href="portafolio.html">
+            <p class="link">Portafolio</p>
+          </a>
+        </div>
+        <div>
+          <p class="link">Contactos</p>
+        </div>
+        <div>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+        <div>
+          <a class="link" href="tel:+525555296000">+52 5555296000</a>
+        </div>
       </div>
     </div>
-
-   
 
     <!-- Cuerpo de la página -->
 
@@ -172,7 +167,8 @@
                   <label class="boxform__label">Teléfono</label><br />
                   <div class="boxform__hover">
                     <input class="boxform__data" type:"tel" name="Teléfono"
-                    required pattern="[0-9]{10}" placeholder="código de área+número telefónico fijo">
+                    required pattern="[0-9]{10}" placeholder="código de
+                    área+número telefónico fijo">
                     <div class="boxform__group">
                       <svg class="boxform__icon">
                         <use href="./images/icons.svg#icon-telefono"></use>
@@ -230,27 +226,59 @@
 
       <section class="container">
         <div class="valuecards">
-          <svg class="valuecards__icon">
-            <use
-              href="./images/icons.svg#icon-icon-antena "
-              width="65px "
-              height="70px "
-              x="102 "
-              y="25 "
-            ></use>
-          </svg>
-          <svg class="valuecards__icon">
-            <use
-              href="./images/icons.svg#icon-icon-reloj "
-              width="65px "
-              height="70px "
-              x="102 "
-              y="25 "
-            ></use>
-          </svg>
+
+          <div class="valuecard">
+            <svg class="valuecards__icon">
+              <use
+                href="./images/icons.svg#icon-icon-antena "
+                width="65px "
+                height="70px "
+                x="102 "
+                y="25 "
+              ></use>
+            </svg>
+            <article class="articles">
+              <h2 class="articles__h2"><b>ATENCIÓN A LOS DETALLES</b></h2>
+              <p class="articles__p">
+                Nos adentramos en todos los detalles y procesos de su negocio,
+                para así desarrollar una solución a su medida.
+              </p>
+            </article>
+          </div>
+
+          <div class="valuecard">
+            <svg class="valuecards__icon">
+              <use
+                href="./images/icons.svg#icon-icon-reloj "
+                width="65px "
+                height="70px "
+                x="102 "
+                y="25 "
+              ></use>
+            </svg>
+            <article class="articles">
+              <h2 class="articles__h2"><b>PUNTUALIDAD</b></h2>
+              <p class="articles__p">
+                Con nosotros, usted puede sentirse seguro y protegido. Un
+                principio importante de la empresa: respetar su tiempo y
+                respetar los plazos acordados.
+              </p>
+            </article>
+          </div>
+        <div class="valuecard">
           <svg class="valuecards__icon">
             <use href="./images/icons.svg#icon-icon-computer "></use>
           </svg>
+          <article class="articles">
+            <h2 class="articles__h2"><b>PLANIFICACIÓN</b></h2>
+            <p class="articles__p">
+              Usted podrá observar y participar en cada fase del desarrollo y
+              aplicación de soluciones.
+            </p>
+          </article>
+        </div>
+
+        <div class="valuecard">
           <svg class="valuecards__icon">
             <use
               href="./images/icons.svg#icon-icon-astronauta "
@@ -260,38 +288,15 @@
               y="29 "
             ></use>
           </svg>
-        </div>
-        <div class="articles">
-          <div>
-            <h2 class="articles__h2"><b>ATENCIÓN A LOS DETALLES</b></h2>
-            <p class="articles__p">
-              Nos adentramos en todos los detalles y procesos de su negocio,
-              para así desarrollar una solución a su medida.
-            </p>
-          </div>
-          <div>
-            <h2 class="articles__h2"><b>PUNTUALIDAD</b></h2>
-            <p class="articles__p">
-              Con nosotros, usted puede sentirse seguro y protegido. Un
-              principio importante de la empresa: respetar su tiempo y respetar
-              los plazos acordados.
-            </p>
-          </div>
-          <div>
-            <h2 class="articles__h2"><b>PLANIFICACIÓN</b></h2>
-            <p class="articles__p">
-              Usted podrá observar y participar en cada fase del desarrollo y
-              aplicación de soluciones.
-            </p>
-          </div>
-          <div>
+          <article class="articles">
             <h2 class="articles__h2"><b>TECNOLOGÍA MODERNA</b></h2>
             <p class="articles__p">
               Usamos herramientas innovadoras para resolver las tareas
               asignadas. Es hora de simplificar los procesos laborales.
             </p>
-          </div>
+          </article>
         </div>
+      </div>
       </section>
 
       <!--Servicios-->
@@ -356,6 +361,10 @@
                   alt="Person1 "
                   width="270"
                   height="260"
+                  srcset="images/person1.jpeg,
+                          images/person1_480.jpg 450w"
+                  sizes="(max-width:480px) 450px,
+                         (min-width:1200px) 270px"
                 />
               </div>
               <div>

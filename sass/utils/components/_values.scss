@@ -14,14 +14,12 @@
     border-radius: 4px;
     background: #f5f4fa;
   }
+  &__valuecard{
+    flex-direction: column;
+  }
 }
 
-.articles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: left;
-  margin-bottom: 99px;
+.articles{
   &__h2 {
     height: 16px;
     width: 270px;
@@ -32,7 +30,7 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center; 
     color: #212121;
   }
   &__p {
@@ -45,7 +43,7 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align:justify;
     color: #757575;
   }
 }
