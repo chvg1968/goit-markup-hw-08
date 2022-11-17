@@ -918,7 +918,9 @@ nav {
     display: none;
   }
   .valuecards {
+    margin-top: -165px;
     flex-direction: column;
+    margin-left: -120px;
   }
   .cards {
     height: 2761px;
@@ -991,7 +993,7 @@ nav {
     margin-left: 163px;
   }
   .menu-toggle {
-    display: none;
+    display: block;
   }
 }
 .menu-toggle {
@@ -1045,7 +1047,7 @@ nav {
   color: #2196f3;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   .menu-toggle {
     display: none;
   }
