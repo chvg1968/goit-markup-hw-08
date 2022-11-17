@@ -898,7 +898,16 @@ nav {
   fill: white;
 }
 
+.footlogocolor {
+  color: white;
+}
+
 @media (max-width: 480px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   header {
     display: block;
   }
@@ -938,6 +947,52 @@ nav {
   .images {
     display: none;
   }
+  .footer {
+    max-width: 480px;
+    margin: 0;
+    padding: 0;
+    height: 603px;
+  }
+  .footer__logo {
+    margin-left: 116px;
+  }
+  .footer__find {
+    margin-left: -170px;
+    margin-top: 186px;
+  }
+  .footer-address {
+    margin-left: 50px;
+    text-align: center;
+  }
+  .footer-iconsrow {
+    margin-left: -204px;
+  }
+  .footer-findblock {
+    text-align: center;
+  }
+  .footer-suscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 280px;
+    margin-left: -141px;
+  }
+  .footer-suscription__label {
+    margin-top: 10px;
+    margin-left: 134px;
+  }
+  .footer-suscription__input {
+    margin-top: 10px;
+    margin-left: 105px;
+  }
+  .footer-suscription-button {
+    margin-top: 9px;
+    margin-left: 163px;
+  }
+  .menu-toggle {
+    display: none;
+  }
 }
 .menu-toggle {
   min-height: 40px;
@@ -971,7 +1026,7 @@ nav {
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 20px;
   color: black;
 }
 
@@ -990,6 +1045,11 @@ nav {
   color: #2196f3;
 }
 
+@media (min-width: 480px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 *,
 *::before,
 *::after {

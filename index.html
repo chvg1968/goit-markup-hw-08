@@ -361,10 +361,10 @@
                   alt="Person1 "
                   width="270"
                   height="260"
-                  srcset="images/person1.jpeg,
-                          images/person1_480.jpg 450w"
-                  sizes="(max-width:480px) 450px,
-                         (min-width:1200px) 270px"
+                  srcset="images/person1.jpeg 270w,
+                          images/person1_480.jpg 480w"
+                  sizes="(min-width: 1200px) 270px,
+                         (max-width: 480x) 780px"
                 />
               </div>
               <div>
@@ -600,7 +600,7 @@
     </main>
 
     <footer class="footer">
-      <h2 class="footer__logo">WebStudio</h2>
+      <h2 class="footer__logo">Web<span class="footlogocolor">Studio</span></h2>
       <address class="footer-address">
         <ul>
           <li>
@@ -623,7 +623,7 @@
             >
           </li>
         </ul>
-        <div>
+        <div class="footer-findblock">
           <div>
             <p class="footer__find"><b>ENCUENTRENOS EN</b></p>
           </div>
@@ -679,7 +679,7 @@
               pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
               placeholder="Correo Electrónico"
             </div>
-            <div>
+            <div class="footer-btnblock">
               <button
                 class="footer-suscription-button"
                 type="submit"
