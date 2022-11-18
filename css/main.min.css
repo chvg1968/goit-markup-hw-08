@@ -693,6 +693,14 @@ nav {
   margin-top: 186px;
   gap: 8px;
 }
+.buttons__row1 {
+  display: flex;
+  gap: 8px;
+}
+.buttons__row2 {
+  display: flex;
+  gap: 8px;
+}
 
 .clients {
   height: 372px;
@@ -995,8 +1003,21 @@ nav {
   .menu-toggle {
     display: block;
   }
-  .cardsrow {
-    flex-direction: columns;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .buttons {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .buttons__row1 {
+    margin-left: -60px;
+  }
+  .buttons__row2 {
+    margin-left: -196px;
   }
 }
 .menu-social {
@@ -1039,11 +1060,7 @@ nav {
   display: block;
 }
 
-.mobile-menu .w1 {
-  text-decoration: none;
-}
-
-.mobile-menu .w2::after {
+.mobile-menu .active {
   color: #2196f3;
 }
 

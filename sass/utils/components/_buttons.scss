@@ -40,4 +40,12 @@
   align-items: center;
   margin-top: 186px;
   gap: 8px;
+  &__row1{
+    display: flex;
+    gap:8px;
+  }
+  &__row2{
+    display: flex;
+    gap:8px; 
+  }
 }

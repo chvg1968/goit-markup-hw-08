@@ -116,13 +116,35 @@
     display: block;
   }
 
-  .cardsrow {
-    flex-direction: columns;
-    // justify-content: center;
-    // align-items: center;
+  .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
-}
 
+  // .cardsrow {
+  //   display:flex; 
+  //   flex-direction: columns;
+  //   justify-content: space-evenly;
+  //   align-items: center;
+  //   // justify-content: center;
+  //   // align-items: center;
+  // }
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 60px;
+    &__row1{
+      margin-left:-60px;
+    }
+    &__row2{
+     margin-left:-196px; 
+    }
+  }
+
+
+}
 //-------Bloques y elementos por fuera del media query
 
 .menu-social {
@@ -166,12 +188,10 @@
   display: block;
 }
 
-.mobile-menu .w1{
-  text-decoration: none;
-}
 
-.mobile-menu .w2::after {
-  color: $blue-variant;
+
+.mobile-menu .active{
+  color:$blue-variant;
 }
 
 .mobile-menu .w3 {
