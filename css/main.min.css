@@ -910,6 +910,30 @@ nav {
   color: white;
 }
 
+@media screen and (max-width: 768px) and (min-width: 481) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__logo {
+    animation: pause;
+    margin-left: -165px;
+  }
+  .nav {
+    display: flex;
+    padding: -100px;
+    border: solid 2px red;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   *,
   *::before,
@@ -917,18 +941,25 @@ nav {
     box-sizing: border-box;
   }
   header {
-    display: block;
+    max-width: 480px;
+    justify-content: flex-end;
+    border: solid 2px red;
   }
   .nav__logo {
-    margin-left: 15px;
+    margin-left: -425px;
+    padding: 0;
+    animation: pause;
   }
   .navbar {
+    padding: 0;
     display: none;
+  }
+  .header-left {
+    padding: 0;
   }
   .valuecards {
     margin-top: -165px;
     flex-direction: column;
-    margin-left: -120px;
   }
   .cards {
     height: 2761px;
@@ -1002,6 +1033,7 @@ nav {
   }
   .menu-toggle {
     display: block;
+    margin-left: 0px;
   }
   .container {
     display: flex;
