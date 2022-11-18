@@ -912,9 +912,9 @@ nav {
 
 @media screen and (max-width: 768px) and (min-width: 481) {
   header {
-    display: flex;
-    justify-content: center;
+    max-width: 768px;
     align-items: center;
+    border: solid 2px red;
   }
   .nav__logo {
     animation: pause;
@@ -943,7 +943,6 @@ nav {
   header {
     max-width: 480px;
     justify-content: flex-end;
-    border: solid 2px red;
   }
   .nav__logo {
     margin-left: -425px;
