@@ -2,33 +2,27 @@
 
 
 //-----------------------Media queries para 768px
-@media screen and (max-width: 768px) and (min-width:481){
+@media screen and (min-width:481) and (max-width:768){
 
   header{
-    max-width: 768px;
     align-items: center;
     border:solid 2px red;
   }
 
   .nav__logo {
     animation: pause;
-    margin-left:-165px;
   }
 
 
   .nav{
     display: flex;
-    padding:-100px;
-    
-    border:solid 2px red;
   }
 
   .header-left{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top:25px;
     padding:0;
   }
 
@@ -37,20 +31,20 @@
 //------------------------Media queries para 480px
 
 @media screen and (max-width: 480px) {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+
+
 
 header{
   max-width: 480px;
-  justify-content: flex-end;
+  display:flex; 
+  justify-content:space-between;
+  align-content: center;
+  border:solid 2px red;
 }
 
-  .nav__logo {  
-    margin-left:-425px;
-    padding:0;
+  .nav__logo { 
+    width: 75%; 
+    padding:15px;
     animation: pause;
   }
 
@@ -156,9 +150,11 @@ header{
   }
 
   .menu-toggle {
+    width: 25%;
     display: block;
-    margin-left:0px;
   }
+
+  
 
   .container{
     display:flex;
