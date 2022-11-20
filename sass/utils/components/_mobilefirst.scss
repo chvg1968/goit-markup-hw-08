@@ -10,8 +10,15 @@
 
 @media screen and (max-width: 480px) {
 
+  header{
+    width: 100vw;
+    border:solid 2px red;
+  }
   .nav__logo {
-    padding:15px;
+    // padding-left:15px;
+    transform: translateX(15px);
+    border:solid 2px red; 
+    width: auto;
   }
 
   .navbar{
@@ -20,11 +27,11 @@
   }
 
   .menu-toggle {
-    width: 100%;
+    
+    width: auto;
     display: block;
+    border:solid 2px blue;
   }
-
-  
 
 }
 
@@ -40,8 +47,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 15px;
-  margin-left: -50px;
+  gap: 5px;
+  margin-left: auto;
   margin-top: 64px;
   &__net {
     height: 22px;
@@ -49,14 +56,15 @@
     left: 40px;
     top: 726px;
     font-family: $font-gral;
-    font-size: 18px;
+    font-size: calc(100vw/25);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: $blue-variant;
   }
   &__bar {
-      color: $gray-variant;
+    font-size: calc(100vw/22);
+    color: $gray-variant;
     }
   }
 

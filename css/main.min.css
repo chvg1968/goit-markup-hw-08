@@ -916,16 +916,23 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    width: 100vw;
+    border: solid 2px red;
+  }
   .nav__logo {
-    padding: 15px;
+    transform: translateX(15px);
+    border: solid 2px red;
+    width: auto;
   }
   .navbar {
     padding: 0;
     display: none;
   }
   .menu-toggle {
-    width: 100%;
+    width: auto;
     display: block;
+    border: solid 2px blue;
   }
 }
 @media screen and (min-width: 481px) {
@@ -938,8 +945,8 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 15px;
-  margin-left: -50px;
+  gap: 5px;
+  margin-left: auto;
   margin-top: 64px;
 }
 .menu-social__net {
@@ -948,13 +955,14 @@ footer {
   left: 40px;
   top: 726px;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 4vw;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 .menu-social__bar {
+  font-size: 4.5454545455vw;
   color: #757575;
 }
 
