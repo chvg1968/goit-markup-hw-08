@@ -89,7 +89,7 @@ nav {
 
 @mixin underline-format{
   content: "";
-  width: 48px;
+  width: 50px;
   height: 4px;
   margin-top: -4px;
   display: block;
@@ -109,7 +109,7 @@ nav {
 
 .nav__underlinetoleft {
   @include underline-format;
-  transform:translateX(173px);
+  transform:translateX(175px);
   
 }
 

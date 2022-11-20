@@ -283,10 +283,10 @@
                 </p>
               </div>
             </div>
-            <p class="cardsrow-card__label">
+            <p class="cardsrow-card__label1">
               <b>La inspiración no tiene límites</b>
             </p>
-            <p class="cardsrow-card__label">Sitio Web</p>
+            <p class="cardsrow-card__label2">Sitio Web</p>
           </div>
         </div>
 
@@ -364,72 +364,74 @@
     </main>
 
     <footer class="footer">
-      <h2 class="footer__logo">WebStudio</h2>
-      <address class="footer-address">
-        <ul>
-          <li>
-            <p class="footer-adress__place footer-address__place--color">
-              Calz. Ticomán 500, Ciudad de <br>México, CDMX, México
-            </p>
-          </li>
-          <li>
-            <a
-              href="mailto:info@example.com "
-              class="footer-address__info footer-address__info--color"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a
-              href="tel:+525555296000 "
-              class="footer-adress__info footer-address__info--color"
-              >+52 55 5529 6000</a
-            >
-          </li>
-        </ul>
-        <div>
-          <div>
-            <p class="footer__find"><b>ENCUENTRENOS EN</b></p>
-          </div>
-          <div class="footer-iconsrow">
-            <svg class="footer-iconsrow__icon">
-              <use
-                href="./images/icons.svg#icon-icon-instagram "
-                width="22px"
-                height="22px"
-                x="10 "
-                y="10 "
-              ></use>
-            </svg>
-            <svg class="footer-iconsrow__icon">
-              <use
-                href="./images/icons.svg#icon-icon-twitter "
-                width="22px"
-                height="22px"
-                x="10 "
-                y="10 "
-              ></use>
-            </svg>
-            <svg class="footer-iconsrow__icon">
-              <use
-                href="./images/icons.svg#icon-icon-facebook "
-                width="22px"
-                height="22px"
-                x="10 "
-                y="10 "
-              ></use>
-            </svg>
-            <svg class="footer-iconsrow__icon">
-              <use
-                href="./images/icons.svg#icon-icon-linkedin "
-                width="22px"
-                height="22px"
-                x="10 "
-                y="10 "
-              ></use>
-            </svg>
-          </div>
+      <div class="footer__block1">
+        <h2 class="footer__logo">Web<span class="footlogocolor">Studio</span></h2>
+        <address class="footer-address">
+          <ul>
+            <li>
+              <p class="footer-adress__place footer-address__place--color">
+                Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
+              </p>
+            </li>
+            <li>
+              <a
+                href="mailto:info@example.com"
+                class="footer-address__info footer-address__info--color"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+525555296000"
+                class="footer-adress__place footer-address__info--color"
+                >+52 5555296000</a
+              >
+            </li>
+          </ul>
         </div>
+          <div class="footer__findblock">
+            <div>
+              <p class="footer__find"><b>ENCUENTRENOS EN</b></p>
+            </div>
+            <div class="footer-iconsrow">
+              <svg class="footer-iconsrow__icon">
+                <use
+                  href="./images/icons.svg#icon-icon-instagram "
+                  width="22px"
+                  height="22px"
+                  x="10 "
+                  y="10 "
+                ></use>
+              </svg>
+              <svg class="footer-iconsrow__icon">
+                <use
+                  href="./images/icons.svg#icon-icon-twitter "
+                  width="22px"
+                  height="22px"
+                  x="10 "
+                  y="10 "
+                ></use>
+              </svg>
+              <svg class="footer-iconsrow__icon">
+                <use
+                  href="./images/icons.svg#icon-icon-facebook "
+                  width="22px"
+                  height="22px"
+                  x="10 "
+                  y="10 "
+                ></use>
+              </svg>
+              <svg class="footer-iconsrow__icon">
+                <use
+                  href="./images/icons.svg#icon-icon-linkedin "
+                  width="22px"
+                  height="22px"
+                  x="10 "
+                  y="10 "
+                ></use>
+              </svg>
+            </div>
+          </div>
         <div class="footer-suscription">
           <form>
             <div>
@@ -443,11 +445,11 @@
               pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
               placeholder="Correo Electrónico"
             </div>
-            <div>
+            <div class="footer-btnblock">
               <button
+                class="footer-suscription-button"
                 type="submit"
                 value="submit"
-                class="footer-suscription-button"
               >
                 <h3 class="footer-suscription-button__text">Suscríbase</h3>
                 <svg class="footer-suscription-button__icon">
@@ -457,6 +459,7 @@
             </div>
           </form>
         </div>
+          
       </address>
     </footer>
     <script

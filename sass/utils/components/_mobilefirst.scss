@@ -2,188 +2,36 @@
 
 
 //-----------------------Media queries para 768px
-@media screen and (min-width:481) and (max-width:768){
-
-  header{
-    align-items: center;
-    border:solid 2px red;
-  }
-
-  .nav__logo {
-    animation: pause;
-  }
 
 
-  .nav{
-    display: flex;
-  }
 
-  .header-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:0;
-  }
-
-}
 
 //------------------------Media queries para 480px
 
 @media screen and (max-width: 480px) {
 
-
-
-header{
-  max-width: 480px;
-  display:flex; 
-  justify-content:space-between;
-  align-content: center;
-  border:solid 2px red;
-}
-
-  .nav__logo { 
-    width: 75%; 
+  .nav__logo {
     padding:15px;
-    animation: pause;
   }
 
-  .navbar {
+  .navbar{
     padding:0;
     display: none;
-  }
-
-  .header-left{
-    padding:0;
-  }
-
-  
-  .valuecards {
-    margin-top: -165px;
-    flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // margin-left: -120px;
-  }
-
-  .cards {
-    height: 2761px;
-    width: 480px;
-    left: 0px;
-    top: 1574px;
-    border-radius: 0px;
-    &__title {
-      margin-top: 26px;
-      margin-bottom: 30px;
-    }
-    &__people {
-      margin-top: 330px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-    }
-    &__card {
-      height: auto;
-      width: auto;
-      left: 15px;
-      // top: 1697px;
-      border-radius: [object Object]px;
-    }
-  }
-
-  .images {
-    display: none;
-  }
-
-  .footer {
-    max-width: 480px;
-    margin: 0;
-    padding: 0;
-    height: 603px;
-
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    &__logo {
-      margin-left: 116px;
-    }
-    &__find {
-      margin-left: -170px;
-      margin-top: 186px;
-    }
-  }
-
-  .footer-address {
-    margin-left: 50px;
-    text-align: center;
-  }
-
-  .footer-iconsrow {
-    margin-left: -204px;
-  }
-
-  .footer-findblock {
-    text-align: center;
-  }
-
-  .footer-suscription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 280px;
-    margin-left: -141px;
-    &__label {
-      margin-top: 10px;
-      margin-left: 134px;
-    }
-    &__input {
-      margin-top: 10px;
-      margin-left: 105px;
-    }
-  }
-
-  .footer-suscription-button {
-    margin-top: 9px;
-    margin-left: 163px;
   }
 
   .menu-toggle {
-    width: 25%;
+    width: 100%;
     display: block;
   }
 
   
 
-  .container{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+}
+
+@media screen and (min-width: 481px) {
+  .menu-toggle {
+    display: none;
   }
-
-  // .cardsrow {
-  //   display:flex; 
-  //   flex-direction: columns;
-  //   justify-content: space-evenly;
-  //   align-items: center;
-  //   // justify-content: center;
-  //   // align-items: center;
-  // }
-
-  .buttons {
-    flex-direction: column;
-    margin-top: 60px;
-    &__row1{
-      margin-left:-60px;
-    }
-    &__row2{
-     margin-left:-196px; 
-    }
-  }
-
-
 }
 //-------Bloques y elementos por fuera del media query
 
@@ -227,8 +75,6 @@ header{
   margin-bottom: 30px;
   display: block;
 }
-
-
 
 .mobile-menu .active{
   color:$blue-variant;
@@ -296,8 +142,3 @@ header{
   color: $blue-variant;
 }
 
-@media (min-width: 481px) {
-  .menu-toggle {
-    display: none;
-  }
-}

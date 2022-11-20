@@ -368,16 +368,14 @@
           <div class="cards__people">
             <div class="cards-card">
               <div>
-                <img
-                  src="images/person1.jpeg "
-                  alt="Person1 "
+                <picture>
+                  <img src="images/person1.jpeg "
+                  alt="Person1"
                   width="270"
                   height="260"
-                  srcset="images/person1.jpeg 270w,
-                          images/person1_480.jpg 480w"
-                  sizes="(min-width: 1200px) 270px,
-                         (max-width: 480x) 780px"
-                />
+                  >
+                  <source srcset="images/person1_480.jpg" media="(max-width: 480px)">
+              </picture>
               </div>
               <div>
                 <p><b>Andrés Cubo</b></p>
@@ -612,6 +610,7 @@
     </main>
 
     <footer class="footer">
+      <div class="footer__block1">
       <h2 class="footer__logo">Web<span class="footlogocolor">Studio</span></h2>
       <address class="footer-address">
         <ul>
@@ -635,7 +634,8 @@
             >
           </li>
         </ul>
-        <div class="footer-findblock">
+      </div>
+        <div class="footer__findblock">
           <div>
             <p class="footer__find"><b>ENCUENTRENOS EN</b></p>
           </div>
@@ -678,6 +678,7 @@
             </svg>
           </div>
         </div>
+        
         <div class="footer-suscription">
           <form>
             <div>
@@ -705,6 +706,8 @@
             </div>
           </form>
         </div>
+          
+        
       </address>
     </footer>
     <script src="./js/modal.js "></script>

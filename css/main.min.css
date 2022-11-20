@@ -107,7 +107,7 @@ nav {
 
 .nav__underlinetoright {
   content: "";
-  width: 48px;
+  width: 50px;
   height: 4px;
   margin-top: -4px;
   display: block;
@@ -122,13 +122,13 @@ nav {
 
 .nav__underlinetoleft {
   content: "";
-  width: 48px;
+  width: 50px;
   height: 4px;
   margin-top: -4px;
   display: block;
   background-color: #2196f3;
   transition: transform 1s;
-  transform: translateX(173px);
+  transform: translateX(175px);
 }
 
 .nav__box:hover .nav__underlinetoleft {
@@ -231,9 +231,6 @@ nav {
   top: 80px;
   border-radius: 0px;
   background-image: url("../images/Imagenfondo.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -747,7 +744,16 @@ nav {
   border: solid 1px #2196f3;
 }
 
+footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: auto;
+}
+
 .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   height: 252px;
   width: 100%;
   left: 0px;
@@ -755,20 +761,9 @@ nav {
   border-radius: 0px;
   background-color: #2f303a;
 }
-.footer__find {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  height: 16px;
-  width: 136px;
-  left: 516px;
-  top: 1703px;
-  margin-left: 156px;
-  margin-top: -12px;
-  color: white;
+.footer__block1 {
+  float: left;
+  margin-left: -50%;
 }
 .footer__logo {
   height: 31px;
@@ -782,15 +777,29 @@ nav {
   letter-spacing: 0.03em;
   text-align: left;
   color: #2196f3;
-  padding-top: 60px;
-  margin-left: 215px;
+}
+.footer__findblock {
+  margin-left: -50%;
+  margin-top: -60px;
+  width: auto;
+}
+.footer__find {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  height: 16px;
+  width: 136px;
+  left: 516px;
+  top: 1703px;
+  margin-bottom: 10px;
+  color: white;
 }
 
 .footer-address {
-  display: flex;
-  flex-direction: row;
   list-style: none;
-  margin-left: 170px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -806,12 +815,6 @@ nav {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-iconsrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 156px;
-}
 .footer-iconsrow__icon {
   height: 44px;
   width: 44px;
@@ -821,7 +824,6 @@ nav {
   align-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   fill: white;
-  margin-right: 10px;
 }
 .footer-iconsrow__icon:hover {
   cursor: pointer;
@@ -833,8 +835,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 830px;
-  margin-top: -12px;
+  margin-left: 560px;
+  margin-top: -40px;
 }
 .footer-suscription__input {
   position: relative;
@@ -884,11 +886,13 @@ nav {
   border-radius: 4px;
   border-style: none;
 }
+
 .footer-suscription-button__icon {
   width: 24px;
   height: 24px;
   margin-left: 20px;
 }
+
 .footer-suscription-button__text {
   font-family: Roboto;
   font-size: 16px;
@@ -899,6 +903,7 @@ nav {
   height: 30px;
   width: 89px;
 }
+
 .footer-suscription-button:hover {
   cursor: pointer;
   background-color: #2196f3;
@@ -910,138 +915,22 @@ nav {
   color: white;
 }
 
-@media screen and (min-width: 481) and (max-width: 768) {
-  header {
-    align-items: center;
-    border: solid 2px red;
-  }
-  .nav__logo {
-    animation: pause;
-  }
-  .nav {
-    display: flex;
-  }
-  .header-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-}
 @media screen and (max-width: 480px) {
-  header {
-    max-width: 480px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    border: solid 2px red;
-  }
   .nav__logo {
-    width: 75%;
     padding: 15px;
-    animation: pause;
   }
   .navbar {
     padding: 0;
     display: none;
   }
-  .header-left {
-    padding: 0;
-  }
-  .valuecards {
-    margin-top: -165px;
-    flex-direction: column;
-  }
-  .cards {
-    height: 2761px;
-    width: 480px;
-    left: 0px;
-    top: 1574px;
-    border-radius: 0px;
-  }
-  .cards__title {
-    margin-top: 26px;
-    margin-bottom: 30px;
-  }
-  .cards__people {
-    margin-top: 330px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  .cards__card {
-    height: auto;
-    width: auto;
-    left: 15px;
-    border-radius: [object Object] px;
-  }
-  .images {
-    display: none;
-  }
-  .footer {
-    max-width: 480px;
-    margin: 0;
-    padding: 0;
-    height: 603px;
-  }
-  .footer__logo {
-    margin-left: 116px;
-  }
-  .footer__find {
-    margin-left: -170px;
-    margin-top: 186px;
-  }
-  .footer-address {
-    margin-left: 50px;
-    text-align: center;
-  }
-  .footer-iconsrow {
-    margin-left: -204px;
-  }
-  .footer-findblock {
-    text-align: center;
-  }
-  .footer-suscription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 280px;
-    margin-left: -141px;
-  }
-  .footer-suscription__label {
-    margin-top: 10px;
-    margin-left: 134px;
-  }
-  .footer-suscription__input {
-    margin-top: 10px;
-    margin-left: 105px;
-  }
-  .footer-suscription-button {
-    margin-top: 9px;
-    margin-left: 163px;
-  }
   .menu-toggle {
-    width: 25%;
+    width: 100%;
     display: block;
   }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .buttons {
-    flex-direction: column;
-    margin-top: 60px;
-  }
-  .buttons__row1 {
-    margin-left: -60px;
-  }
-  .buttons__row2 {
-    margin-left: -196px;
+}
+@media screen and (min-width: 481px) {
+  .menu-toggle {
+    display: none;
   }
 }
 .menu-social {
@@ -1150,11 +1039,6 @@ nav {
   color: #2196f3;
 }
 
-@media (min-width: 481px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 *,
 *::before,
 *::after {
@@ -1166,20 +1050,19 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.min.css.map */

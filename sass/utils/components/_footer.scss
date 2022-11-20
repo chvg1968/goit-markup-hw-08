@@ -1,6 +1,12 @@
 // Elementos del footer
 @import "../variables";
 
+footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: auto;
+}
+
 @mixin footer-findLetter {
   font-family: $font-gral;
   font-size: 14px;
@@ -30,21 +36,18 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   height: 252px;
   width: 100%;
   left: 0px;
   top: 1628px;
   border-radius: 0px;
   background-color: $background-footer;
-  &__find {
-    @include footer-findLetter;
-    height: 16px;
-    width: 136px;
-    left: 516px;
-    top: 1703px;
-    margin-left: 156px;
-    margin-top: -12px;
-    color: $white-color;
+  &__block1 {
+    float:left;
+    margin-left:-50%;
   }
   &__logo {
     height: 31px;
@@ -58,16 +61,27 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $blue-variant;
-    padding-top: 60px;
-    margin-left: 215px;
   }
+  &__findblock {
+    margin-left:-50%;
+    margin-top:-60px;
+    width: auto;
+  }
+  &__find {
+    @include footer-findLetter;
+    height: 16px;
+    width: 136px;
+    left: 516px;
+    top: 1703px;
+    margin-bottom: 10px;
+    color: $white-color;
+  }
+
+  
 }
 
 .footer-address {
-  display: flex;
-  flex-direction: row;
   list-style: none;
-  margin-left: 170px;
   @include footer-placetext;
   &__place--color {
     color: $white-color;
@@ -78,10 +92,6 @@
 }
 
 .footer-iconsrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 156px;
   &__icon {
     height: 44px;
     width: 44px;
@@ -90,12 +100,11 @@
     border-radius: 100px;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: $white-color;
-    margin-right: 10px;
-  }
-  &__icon:hover {
-    cursor: pointer;
-    background-color: $blue-variant;
+    fill: $white-color; 
+    &:hover{
+      cursor: pointer;
+      background-color: $blue-variant;
+    } 
   }
 }
 
@@ -104,44 +113,42 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 830px;
-  margin-top: -12px;
-  &__input {
+  margin-left: 560px;
+  margin-top: -40px;
+  &__input{
     position: relative;
-    height: 50px;
-    width: 358px;
-    left: 0px;
-    top: 0px;
-    border-radius: 4px;
-    margin-top: 14px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: #ffffff99;
-    background: #2f303a;
-    border: 1px solid #ffffff4d;
-    padding-left: 16px;
-    cursor: pointer;
+  height: 50px;
+  width: 358px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  padding-left: 16px;
+  cursor: pointer;
   }
-  &__label {
-    font-family: $font-gral;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    position: relative;
-    height: 16px;
-    width: 275px;
-    color: $white-color;
-    text-decoration: none;
-    margin-bottom: 20px;
+  &__label{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  position: relative;
+  height: 16px;
+  width: 275px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
   }
 }
-
-
 
 .footer-suscription-button {
   position: relative;
@@ -151,30 +158,35 @@
   height: 50px;
   margin-left: 370px;
   margin-top: -50px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   border-style: none;
-  &__icon {
-    width: 24px;
-    height: 24px;
-    margin-left: 20px;
-  }
-  
-  &__text {
-    @include footer-buttonText;
-    height: 30px;
-    width: 89px;
-  }
-  &:hover{
-    cursor: pointer;
-    background-color: $blue-variant;
-    color:$white-color;
-    fill: $white-color;
-  }
+}
+.footer-suscription-button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+.footer-suscription-button__text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  height: 30px;
+  width: 89px;
+}
+.footer-suscription-button:hover {
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  fill: white;
 }
 
+
 .footlogocolor {
-  color:$white-color;
+  color: $white-color;
 }
