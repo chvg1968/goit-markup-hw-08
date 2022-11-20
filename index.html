@@ -74,7 +74,7 @@
         aria-controls="mobile-menu"
       >
         <svg
-          class="icon-menu"
+          class="icon-open"
           width="24"
           height="24"
           fill="currentColor"
@@ -94,6 +94,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
+          class="icon-close"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -127,18 +128,17 @@
             >info@devstudio.com</a
           >
         </div>
-        
-      </div>
-      <ul class="menu-social">
-        <li class="menu-social__net">Instagram</li>
-        <li class="menu-social__bar">|</li>
-        <li class="menu-social__net">Twitter</li>
-        <li class="menu-social__bar">|</li>
-        <li class="menu-social__net">Facebook</li>
-        <li class="menu-social__bar">|</li>
-        <li class="menu-social__net">Linkedin</li>
-      </ul>
-    </div>
+  
+        <ul class="menu-social">
+          <li class="menu-social__net">Instagram</li>
+          <li class="menu-social__bar">|</li>
+          <li class="menu-social__net">Twitter</li>
+          <li class="menu-social__bar">|</li>
+          <li class="menu-social__net">Facebook</li>
+          <li class="menu-social__bar">|</li>
+            <li class="menu-social__net">Linkedin</li>
+        </ul>
+
       </div>
     </div>
 
@@ -611,29 +611,30 @@
 
     <footer class="footer">
       <div class="footer__block1">
-      <h2 class="footer__logo">Web<span class="footlogocolor">Studio</span></h2>
-      <address class="footer-address">
-        <ul>
-          <li>
-            <p class="footer-adress__place footer-address__place--color">
-              Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
-            </p>
-          </li>
-          <li>
-            <a
-              href="mailto:info@example.com"
-              class="footer-address__info footer-address__info--color"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a
-              href="tel:+525555296000"
-              class="footer-adress__place footer-address__info--color"
-              >+52 5555296000</a
-            >
-          </li>
-        </ul>
+        <h2 class="footer__logo">Web<span class="footlogocolor">Studio</span></h2>
+        <address class="footer-address">
+          <ul>
+            <li>
+              <p class="footer-adress__place footer-address__place--color">
+                Calz. Ticomán 500, Ciudad de <br />México, CDMX, México
+              </p>
+            </li>
+            <li>
+              <a
+                href="mailto:info@example.com"
+                class="footer-address__info footer-address__info--color"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+525555296000"
+                class="footer-adress__place footer-address__info--color"
+                >+52 5555296000</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
         <div class="footer__findblock">
           <div>
@@ -706,9 +707,6 @@
             </div>
           </form>
         </div>
-          
-        
-      </address>
     </footer>
     <script src="./js/modal.js "></script>
     <script
@@ -717,6 +715,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

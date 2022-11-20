@@ -13,25 +13,155 @@
   header{
     width: 100vw;
     border:solid 2px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .nav__logo {
-    // padding-left:15px;
-    transform: translateX(15px);
+    animation: pause;
+    width: 80%;
     border:solid 2px red; 
     width: auto;
   }
 
+  .box{
+    width: auto;
+    height:auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &__button{
+      width: auto;
+    }
+    &__title{
+      width: auto;
+      font-size: calc(100vw/25);
+      line-height: 30px;
+    }
+  }
+
+  .modal{
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    width: auto;
+    padding-right: -50px;
+  }
+
+  .boxform {
+    text-align: left;
+    padding: 28px;
+    &__input {
+      width: auto;
+      position: relative;
+      margin-top: 12px;
+    }
+    &__label {
+      width: auto;
+    }
+    &__data {
+      width: auto;
+    }
+    &__group {
+      position: absolute;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__icon {
+      position: relative;
+      width: auto;
+    }
+    &__comments {
+      margin-top: 12px;
+    }
+  
+    &__commentslabel {
+      width: auto;
+    }
+    &__textarea {
+      width: auto;
+    }
+    &__check {
+      position: relative;
+    }
+    &__slabel {
+      margin-top: -22px;
+      margin-left: 18px;
+    }
+    &__summitlabel {
+      width: auto;
+    }
+    &__submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__closeicon {
+      position: absolute;
+      left: auto;
+      }
+  }
+  
   .navbar{
     padding:0;
     display: none;
   }
 
   .menu-toggle {
-    
-    width: auto;
+    width: 20%;
     display: block;
     border:solid 2px blue;
   }
+
+  .mobile-menu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+  }
+
+  .menu-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .valuecards {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    place-content: center;
+    &__icon {
+      width: auto; 
+    }
+  }
+
+  .images{
+    display: none;
+  }
+
+  .cards{
+    width: 100%;
+    height: 100%;
+    padding:15px;
+    &__people{
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:30px; 
+    }
+    &__card{
+      width: auto;
+      height: auto;
+    }
+  }
+    
+  
 
 }
 
@@ -42,13 +172,24 @@
 }
 //-------Bloques y elementos por fuera del media query
 
+
+.icon-open:hover{
+  cursor:pointer;
+}
+
+.icon-close:hover{
+  cursor:pointer;
+  fill:$blue-variant;
+  color:$white-color;
+}
+
 .menu-social {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 5px;
-  margin-left: auto;
+  margin-left: calc(-100vw/10);
   margin-top: 64px;
   &__net {
     height: 22px;
@@ -124,9 +265,9 @@
   height: 100vh;
   padding: 32px;
   background-color: $white-color;
-  z-index: 999;
   transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
+  z-index:999;
 }
 
 .menu-container.is-open {
@@ -142,7 +283,7 @@
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-top: 40px;
 }
 
 .link:hover {
