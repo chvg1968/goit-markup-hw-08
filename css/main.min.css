@@ -1054,6 +1054,16 @@ footer {
     width: auto;
     height: auto;
   }
+  .clients-icons {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .footer {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 @media screen and (min-width: 481px) {
   .menu-toggle {
