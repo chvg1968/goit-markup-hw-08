@@ -1,5 +1,6 @@
 @charset "UTF-8";
 header {
+  position: relative;
   width: 1200px;
   height: 80px;
   display: flex;
@@ -14,9 +15,11 @@ header {
 /*----------------------------------------Títulos,párrafos*/
 /*------------------------------------------Encabezado*/
 .nav__logo {
+  position: absolute;
   height: 31px;
   width: 145px;
-  left: 215px;
+  margin: 0 auto;
+  left: 0;
   top: 24px;
   font-family: Raleway;
   font-size: 26px;
@@ -920,8 +923,8 @@ footer {
   }
   .nav__logo {
     animation: pause;
-    width: auto;
-    width: auto;
+    margin: 0 auto;
+    left: 15px;
   }
   .box {
     width: auto;
@@ -948,6 +951,7 @@ footer {
   .boxform {
     text-align: left;
     padding: 28px;
+    margin: 0 auto;
   }
   .boxform__input {
     width: auto;
@@ -962,20 +966,20 @@ footer {
   }
   .boxform__group {
     position: absolute;
-    width: auto;
+    width: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .boxform__icon {
     position: relative;
-    width: auto;
+    width: 0 auto;
   }
   .boxform__comments {
     margin-top: 12px;
   }
   .boxform__commentslabel {
-    width: auto;
+    width: 0 auto;
   }
   .boxform__textarea {
     width: auto;
@@ -1004,7 +1008,8 @@ footer {
     display: none;
   }
   .menu-toggle {
-    width: 20%;
+    position: absolute;
+    right: 0;
     display: block;
     border: solid 2px blue;
   }
@@ -1027,12 +1032,13 @@ footer {
   }
   .valuecards__icon {
     width: auto;
+    margin: 0 auto;
   }
   .images {
     display: none;
   }
   .cards {
-    width: 100%;
+    width: auto;
     height: 100%;
     padding: 15px;
   }
@@ -1048,13 +1054,31 @@ footer {
     width: auto;
     height: auto;
   }
+  .buttons {
+    width: 10vw;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(21px, auto);
+  }
+  .cardsrow {
+    width: 10vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
   .clients-icons {
-    width: auto;
+    width: 10vw;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
   }
   .footer {
+    width: auto;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1079,17 +1103,17 @@ footer {
 
 .menu-social {
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 5px;
-  margin-left: -10vw;
-  margin-top: 64px;
+  gap: inherit;
+  margin: 0 auto;
+  padding: 0;
 }
 .menu-social__net {
+  justify-content: space-evenly;
   height: 22px;
   width: 85px;
-  left: 40px;
+  left: 0;
   top: 726px;
   font-family: Roboto;
   font-size: 4vw;
@@ -1097,10 +1121,12 @@ footer {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+  margin-left: 1px;
 }
 .menu-social__bar {
   font-size: 4.5454545455vw;
   color: #757575;
+  padding: 1.6666666667vw;
 }
 
 .mobile-menu .link {
