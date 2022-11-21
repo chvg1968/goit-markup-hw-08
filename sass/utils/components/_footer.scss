@@ -115,76 +115,78 @@ footer {
   justify-content: space-evenly;
   margin-left: 560px;
   margin-top: -40px;
+  &__label{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    position: relative;
+    height: 16px;
+    width: 275px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    }
   &__input{
     position: relative;
-  height: 50px;
-  width: 358px;
-  left: 0px;
-  top: 0px;
-  border-radius: 4px;
-  margin-top: 14px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.6);
-  background: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3019607843);
-  padding-left: 16px;
-  cursor: pointer;
+    height: 50px;
+    width: 358px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
+    background: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3019607843);
+    padding-left: 16px;
+    cursor: pointer;
   }
-  &__label{
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  position: relative;
-  height: 16px;
-  width: 275px;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 20px;
+  &__block{
+     .button {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 200px;
+      height: 50px;
+      margin-left: 370px;
+      margin-top: -50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      border-style: none;
+     }
+    .text{
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      text-align: center;
+      height: 30px;
+      width: 89px;
+      }
+    .icon{
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
+      }
+    &:hover{
+      cursor: pointer;
+      background-color: #2196f3;
+      color: white;
+      fill: white;
+      }
   }
 }
 
-.footer-suscription-button {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 200px;
-  height: 50px;
-  margin-left: 370px;
-  margin-top: -50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  border-style: none;
-}
-.footer-suscription-button__icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 20px;
-}
-.footer-suscription-button__text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  height: 30px;
-  width: 89px;
-}
-.footer-suscription-button:hover {
-  cursor: pointer;
-  background-color: #2196f3;
-  color: white;
-  fill: white;
-}
 
 
 .footlogocolor {
