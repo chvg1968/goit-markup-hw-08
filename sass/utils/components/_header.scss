@@ -50,7 +50,7 @@ nav {
   width: 600px;
 }
 
-@mixin header-letter($width, $left, $marginright) {
+@mixin header-letter($width, $left, $marginright, $colortype) {
   height: 16px;
   width: $width;
   left: $left;
@@ -64,19 +64,19 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: $gray-variant;
+  color: $colortype;
 }
 
 .nav__word1 {
-  @include header-letter(49px, 453px, 37.5px);
+  @include header-letter(49px, 453px, 37.5px, $color-header-letter);
 }
 
 .nav__word2 {
-  @include header-letter(65px, 552px, 46.5px);
+  @include header-letter(65px, 552px, 46.5px, $color-header-letter);
 }
 
 .nav__word3 {
-  @include header-letter(67px, 667px, 0px);
+  @include header-letter(67px, 667px, 0px, $color-header-letter);
 }
 
 .nav__word1:hover {
@@ -149,7 +149,8 @@ nav {
 }
 
 .header-left__email {
-  @include header-letter(135px, 1078px, 0px);
+  @include header-letter(135px, 1078px, 0px, $gray-variant);
+  
 }
 
 
@@ -163,7 +164,7 @@ nav {
 }
 
 .header-left__tel {
-  @include header-letter(118px, 1263px, 0px);
+  @include header-letter(118px, 1263px, 0px, $gray-variant);
 }
 
 .header-left__box:hover * {
