@@ -927,16 +927,19 @@ footer {
     left: 15px;
   }
   .box {
-    margin: -50% auto;
+    border: solid 2px red;
+    margin: 0 auto 60px auto;
     padding: 0;
     width: 100vw;
-    height: 50vh;
-    background-size: contain;
+    height: 50vw;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
   .box__button {
-    max-width: 100%;
+    width: auto;
+    font-size: 4vw;
+    line-height: 30px;
   }
   .box__title {
     width: auto;

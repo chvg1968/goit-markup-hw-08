@@ -25,15 +25,19 @@
   }
 
   .box{
-    margin: -50% auto;
+    border:solid 2px red;
+    margin: 0 auto 60px auto;
     padding: 0;
     width: 100vw;
-    height: 50vh;
-    background-size:contain;
+    height: (100vw / 2);
+    background-size:cover;
     background-position:center center;
     background-repeat: no-repeat;
+    
     &__button{
-      max-width: 100%;
+      width: auto;
+      font-size: calc(100vw/25);
+      line-height: 30px;
     }
     &__title{
       width: auto;
