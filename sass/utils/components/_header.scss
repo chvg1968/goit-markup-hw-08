@@ -64,7 +64,7 @@ nav {
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: $color-header-letter;
+  color: $gray-variant;
 }
 
 .nav__word1 {
@@ -145,6 +145,7 @@ nav {
   left: 1048px;
   top: 34px;
   border-radius: 0px;
+  fill:$gray-variant;
 }
 
 .header-left__email {
@@ -158,6 +159,7 @@ nav {
   left: 1243px;
   top: 32px;
   border-radius: 0px;
+  fill:$gray-variant;
 }
 
 .header-left__tel {
