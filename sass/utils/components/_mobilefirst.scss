@@ -25,7 +25,6 @@
   }
 
   .box{
-    border:solid 2px red;
     margin: 0 auto 60px auto;
     padding: 0;
     width: 100vw;
@@ -50,11 +49,11 @@
   //ventana modal
 
   .modal{
+    
     position: fixed;
     top: 20px;
     left: 15px;
-    width: auto;
-    padding-right: -50px;
+    max-width: calc(100vw / 1.09);    
   }
 
   .boxform {
@@ -195,13 +194,14 @@
 
 .menu-social {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   gap:inherit;
-  margin:0 auto;
-  padding:0;
+  width: (100vw / 1.2);
+  
   &__net {
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     height: 22px;
     width: 85px;
     left: 0;
