@@ -954,59 +954,18 @@ footer {
     padding-right: -50px;
   }
   .boxform {
-    text-align: left;
     padding: 28px;
     margin: 0 auto;
   }
-  .boxform__input {
-    width: auto;
-    position: relative;
-    margin-top: 12px;
-  }
-  .boxform__label {
-    width: auto;
-  }
   .boxform__data {
-    width: auto;
-  }
-  .boxform__group {
-    position: absolute;
-    width: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .boxform__icon {
-    position: relative;
-    width: 0 auto;
-  }
-  .boxform__comments {
-    margin-top: 12px;
-  }
-  .boxform__commentslabel {
-    width: 0 auto;
+    width: 83.3333333333vw;
   }
   .boxform__textarea {
-    width: auto;
-  }
-  .boxform__check {
-    position: relative;
-  }
-  .boxform__slabel {
-    margin-top: -22px;
-    margin-left: 18px;
-  }
-  .boxform__summitlabel {
-    width: auto;
-  }
-  .boxform__submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 83.3333333333vw;
   }
   .boxform__closeicon {
     position: absolute;
-    left: auto;
+    left: 83.3333333333vw;
   }
   .navbar {
     padding: 0;

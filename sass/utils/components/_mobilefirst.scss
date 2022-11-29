@@ -58,59 +58,17 @@
   }
 
   .boxform {
-    text-align: left;
     padding: 28px;
     margin: 0 auto; 
-    &__input {
-      width: auto;
-      position: relative;
-      margin-top: 12px;
-    }
-    &__label {
-      width: auto;
-    }
     &__data {
-      width: auto;
-    }
-    &__group {
-      position: absolute;
-      width: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &__icon {
-      position: relative;
-      width: 0 auto;
-    }
-    &__comments {
-      margin-top: 12px;
-    }
-  
-    &__commentslabel {
-      width: 0 auto;
+      width: calc(100vw / 1.2);
     }
     &__textarea {
-      width: auto;
-    }
-    &__check {
-      position: relative;
-    }
-    &__slabel {
-      margin-top: -22px;
-      margin-left: 18px;
-    }
-    &__summitlabel {
-      width: auto;
-    }
-    &__submit {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: calc(100vw / 1.2);
     }
     &__closeicon {
       position: absolute;
-      left: auto;
+      left: calc(100vw / 1.2);
       }
   }
   
