@@ -939,6 +939,76 @@ footer {
     gap: 5px;
     margin: 0 100px 0 -30px;
   }
+  .box {
+    margin: 0 auto 60px auto;
+    padding: 0;
+    width: 100vw;
+    height: 50vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .box__button {
+    width: auto;
+    font-size: 2vw;
+    line-height: 30px;
+  }
+  .box__title {
+    width: auto;
+    font-size: 4vw;
+    line-height: 30px;
+  }
+  .modal {
+    position: fixed;
+    top: 20px;
+    left: 159px;
+    max-width: 91.7431192661vw;
+  }
+  .valuecards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .valuecards__icon {
+    width: 50vw;
+  }
+  .valuecards__valuecard {
+    align-items: center;
+  }
+  .articles__h2 {
+    text-align: center;
+  }
+  .articles__p {
+    text-align: justify;
+  }
+  .images {
+    display: none;
+  }
+  .cards {
+    width: auto;
+    height: 100%;
+    padding: 15px;
+  }
+  .cards__people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .cards__card {
+    width: auto;
+    height: auto;
+  }
+  .clients__title {
+    margin-top: 30vh;
+  }
+  .clients-icons {
+    margin: 30px 15px 60px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
   .mobile-menu {
     display: none;
   }
