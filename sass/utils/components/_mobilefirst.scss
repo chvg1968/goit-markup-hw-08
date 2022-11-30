@@ -89,21 +89,24 @@ width: calc(100vw / 3);
 }
 
 .cards{
+  margin-top:calc(-100vh * 0.05);
   width: auto;
   height: 100%;
   padding:15px;
   &__people{
+    border:solid 2px blue;
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:30px; 
   }
   &__card{
-    width: auto;
-    height: auto;
+    // width: auto;
+    // height: auto;
   }
 }
 
 .clients__title{
+  
   margin-top: calc(100vh * 0.3);
 }
 

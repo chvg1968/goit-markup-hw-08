@@ -987,18 +987,16 @@ footer {
     display: none;
   }
   .cards {
+    margin-top: -5vh;
     width: auto;
     height: 100%;
     padding: 15px;
   }
   .cards__people {
+    border: solid 2px blue;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-  }
-  .cards__card {
-    width: auto;
-    height: auto;
   }
   .clients__title {
     margin-top: 30vh;
