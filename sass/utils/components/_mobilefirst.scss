@@ -3,10 +3,9 @@
 
 //-----------------------Media queries para 768px
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-
-
+//-------------------------Header
 .nav__logo{
   margin-left: 15px; 
 }
@@ -32,6 +31,8 @@ width: calc(100vw / 3);
   margin: 0 100px 0 -30px;
 }
 
+//BACKGROUND
+
 .box{
   margin: 0 auto 60px auto;
   padding: 0;
@@ -53,12 +54,16 @@ width: calc(100vw / 3);
   }
 }
 
+//MODAL WINDOW
+
 .modal {  
   position: fixed;
   top: 20px;
   left: 159px;
   max-width: calc(100vw / 1.09);    
 }
+
+//VALUES 
 
 .valuecards {
   display: grid;
@@ -84,9 +89,12 @@ width: calc(100vw / 3);
   }
 }
 
+
 .images{
   display:none;
 }
+
+//PEOPLE
 
 .cards{
   margin-top:calc(-100vh * 0.05);
@@ -105,6 +113,8 @@ width: calc(100vw / 3);
   }
 }
 
+//CLIENTS
+
 .clients__title{
   
   margin-top: calc(100vh * 0.3);
@@ -122,9 +132,42 @@ width: calc(100vw / 3);
   display:none; 
 }
 
-
+//BUSINESS CARDS 
+.cardsrow {
+  width: calc(100vw - 60px);
+  margin: 30px -20px 60px 15px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 10px;
+  // gap: 30px;
+  border: solid 2px blue;
 }
 
+.buttons{
+  margin-top:60px;
+}
+
+//FOOTER
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__block1, .footer__findblock, .footer-suscription {
+  width: 100%;
+  text-align: center;
+}
+
+  .footer__block1, .footer__findblock, .footer-suscription {
+    width: 30%;
+  }
+
+
+}
 
 //------------------------Media queries para 480px
 
@@ -263,12 +306,12 @@ width: calc(100vw / 3);
 
   //ventanas negocios
   .cardsrow{
-    width: calc(100vw/10);
-    margin: 0 auto; 
+    max-width: calc(100vw - 40px);
+    margin: 60px 15px 30px 40px; 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    margin-bottom:60px; 
+    align-items: center;
   }
   //iconos de clientes 
   .clients-icons{

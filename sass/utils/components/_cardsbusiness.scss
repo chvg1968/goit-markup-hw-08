@@ -13,9 +13,9 @@
 
 
 .cardsrow {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
