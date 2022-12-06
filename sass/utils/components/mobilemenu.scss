@@ -1,0 +1,128 @@
+@import "../variables";
+
+
+.icon-open:hover {
+    cursor: pointer;
+  }
+  
+  .icon-close:hover {
+    cursor: pointer;
+    fill: $blue-variant;
+    color: $white-color;
+  }
+  
+  .menu-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: inherit;
+    width: (100vw / 1.2);
+  
+    &__net {
+      // justify-content: space-evenly;
+      height: 22px;
+      width: 85px;
+      left: 0;
+      top: 726px;
+      font-family: $font-gral;
+      font-size: calc(100vw/25);
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $blue-variant;
+      margin-left: 1px;
+    }
+  
+    &__bar {
+      font-size: calc(100vw/22);
+      color: $gray-variant;
+      padding: calc(100vw/60);
+    }
+  }
+  
+  
+  .mobile-menu .link {
+    height: 22px;
+    width: 85px;
+    left: 40px;
+    top: 726px;
+    font-family: $font-gral;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 30px;
+    display: block;
+  }
+  
+  .mobile-menu .active {
+    color: $blue-variant;
+  }
+  
+  .mobile-menu .w3 {
+    margin-bottom: 302px;
+  }
+  
+  .mobile-menu .w4 {
+    width: 165px;
+    text-align: justify;
+    text-decoration: none;
+    color: $blue-variant;
+  }
+  
+  .mobile-menu .w5 {
+    text-decoration: none;
+    color: $gray-variant;
+  }
+  
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: $white-color;
+    transform: translateY(-100%);
+    opacity:0;
+    transition: transform 250ms ease-in-out;
+    z-index: 999;
+  }
+  
+  .menu-container.is-open {
+    transform: translateY(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: black;
+  }
+  
+  .mobile-menu {
+  
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  
+  .link:hover {
+    cursor: pointer;
+    color: $blue-variant;
+  }
