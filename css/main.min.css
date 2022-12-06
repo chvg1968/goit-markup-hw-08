@@ -1065,6 +1065,11 @@ nav {
     border: solid 2px red;
   }
 }
+@media screen and (max-height: 650px) {
+  .menu-container {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .nav__logo {
     margin-left: 15px;

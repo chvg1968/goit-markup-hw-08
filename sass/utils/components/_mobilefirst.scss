@@ -235,6 +235,14 @@
 
 }
 
+//Este media query corrige problema de aparición de una porción del menu mobile al desplazar verticalmente el responsive. 
+
+@media screen and (max-height: 650px) {
+  .menu-container{
+    display: none;
+  }
+}
+
 //FIXME:-----------------------Media queries para 768px
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
