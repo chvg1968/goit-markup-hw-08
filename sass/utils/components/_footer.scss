@@ -47,9 +47,7 @@
   top: 1628px;
   border-radius: 0px;
   background-color: $background-footer;
-  &__block1 {
-    // float:left;
-  }
+
   &__logo {
     height: 31px;
     width: 145px;
@@ -63,10 +61,12 @@
     text-align: left;
     color: $blue-variant;
   }
+
   &__findblock {
     margin-top: -4em;
-    
+
   }
+
   &__find {
     @include footer-findLetter;
     height: 16px;
@@ -74,10 +74,10 @@
     left: 516px;
     top: 2751px;
     color: $white-color;
-    
+
   }
 
-  
+
 }
 
 
@@ -85,9 +85,11 @@
 .footer-address {
   list-style: none;
   @include footer-placetext;
+
   &__place--color {
     color: $white-color;
   }
+
   &__info--color {
     color: #ffffff99;
   }
@@ -102,11 +104,12 @@
     border-radius: 100px;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: $white-color; 
-    &:hover{
+    fill: $white-color;
+
+    &:hover {
       cursor: pointer;
       background-color: $blue-variant;
-    } 
+    }
   }
 }
 
@@ -116,7 +119,8 @@
   align-items: center;
   justify-content: space-between;
   margin-top: -1.5em;
-  &__label{
+
+  &__label {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
@@ -129,8 +133,9 @@
     color: white;
     text-decoration: none;
     margin-bottom: 1.5em;
-    }
-  &__input{
+  }
+
+  &__input {
     position: relative;
     height: 50px;
     width: 358px;
@@ -149,8 +154,9 @@
     padding-left: 16px;
     cursor: pointer;
   }
-  &__block{
-     .button {
+
+  &__block {
+    .button {
       position: relative;
       top: 0px;
       left: 0px;
@@ -163,14 +169,16 @@
       justify-content: center;
       border-radius: 4px;
       border-style: none;
-      &:hover{
+
+      &:hover {
         cursor: pointer;
         background-color: #2196f3;
         color: white;
         fill: white;
-        }
-     }
-    .text{
+      }
+    }
+
+    .text {
       font-family: Roboto;
       font-size: 16px;
       font-weight: 700;
@@ -179,13 +187,14 @@
       text-align: center;
       height: 30px;
       width: 89px;
-      }
-    .icon{
-        width: 24px;
-        height: 24px;
-        margin-left: 20px;
-      }
-    
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 20px;
+    }
+
   }
 }
 
