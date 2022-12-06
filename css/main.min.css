@@ -749,28 +749,20 @@ nav {
   border: solid 1px #2196f3;
 }
 
-footer {
-  max-width: 1200px;
-  margin: auto;
-  padding: auto;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-evenly;
+.footer-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  height: 252px;
+  gap: 9em;
+  height: auto;
   width: 100%;
   left: 0px;
   top: 1628px;
   border-radius: 0px;
   background-color: #2f303a;
 }
-.footer__block1 {
-  float: left;
-  margin-left: -50%;
-}
-.footer__logo {
+.footer-container__logo {
   height: 31px;
   width: 145px;
   left: 215px;
@@ -783,12 +775,10 @@ footer {
   text-align: left;
   color: #2196f3;
 }
-.footer__findblock {
-  margin-left: -50%;
-  margin-top: -60px;
-  width: auto;
+.footer-container__findblock {
+  margin-top: -4em;
 }
-.footer__find {
+.footer-container__find {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -798,8 +788,7 @@ footer {
   height: 16px;
   width: 136px;
   left: 516px;
-  top: 1703px;
-  margin-bottom: 10px;
+  top: 2751px;
   color: white;
 }
 
@@ -836,12 +825,11 @@ footer {
 }
 
 .footer-suscription {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: 560px;
-  margin-top: -40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -1.5em;
 }
 .footer-suscription__label {
   font-family: Roboto;
@@ -855,7 +843,7 @@ footer {
   width: 275px;
   color: white;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 .footer-suscription__input {
   position: relative;
@@ -864,7 +852,6 @@ footer {
   left: 0px;
   top: 0px;
   border-radius: 4px;
-  margin-top: 14px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -890,6 +877,12 @@ footer {
   border-radius: 4px;
   border-style: none;
 }
+.footer-suscription__block .button:hover {
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  fill: white;
+}
 .footer-suscription__block .text {
   font-family: Roboto;
   font-size: 16px;
@@ -905,132 +898,11 @@ footer {
   height: 24px;
   margin-left: 20px;
 }
-.footer-suscription__block:hover {
-  cursor: pointer;
-  background-color: #2196f3;
-  color: white;
-  fill: white;
-}
 
 .footlogocolor {
   color: white;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav__logo {
-    margin-left: 15px;
-  }
-  .nav {
-    margin: 0 100px 0 -100px;
-    padding: 0;
-    width: 33.3333333333vw;
-  }
-  .nav__underlinetoright {
-    transform: translateX(85px);
-  }
-  .nav__underlinetoleft {
-    transform: translateX(85px);
-  }
-  .header-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 5px;
-    margin: 0 100px 0 -30px;
-  }
-  .box {
-    margin: 0 auto 60px auto;
-    padding: 0;
-    width: 100vw;
-    height: 50vw;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .box__button {
-    width: auto;
-    font-size: 2vw;
-    line-height: 30px;
-  }
-  .box__title {
-    width: auto;
-    font-size: 4vw;
-    line-height: 30px;
-  }
-  .modal {
-    position: fixed;
-    top: 20px;
-    left: 159px;
-    max-width: 91.7431192661vw;
-  }
-  .valuecards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
-  .valuecards__icon {
-    width: 50vw;
-  }
-  .valuecards__valuecard {
-    align-items: center;
-  }
-  .articles__h2 {
-    text-align: center;
-  }
-  .articles__p {
-    text-align: justify;
-  }
-  .images {
-    display: none;
-  }
-  .cards {
-    margin-top: -5vh;
-    width: auto;
-    height: 100%;
-    padding: 15px;
-  }
-  .cards__people {
-    border: solid 2px blue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  .clients__title {
-    margin-top: 30vh;
-  }
-  .clients-icons {
-    margin: 30px 15px 60px 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-  }
-  .mobile-menu {
-    display: none;
-  }
-  .cardsrow {
-    width: calc(100vw - 60px);
-    margin: 30px -20px 60px 15px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-column-gap: 10px;
-    border: solid 2px blue;
-  }
-  .buttons {
-    margin-top: 60px;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer__block1, .footer__findblock, .footer-suscription {
-    width: 30%;
-  }
-}
 @media screen and (max-width: 480px) {
   header {
     width: 100vw;
@@ -1164,18 +1036,168 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
   }
-  .footer {
-    height: auto;
+  .footer-container {
+    gap: 3em;
+  }
+  .footer-container__block1, .footer-container__find, .footer-suscription {
+    margin: 0.5em auto 2em auto;
+    padding: 0 auto;
+  }
+  .footer-container__block1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    gap: 10%;
   }
-  .footer__block1, .footer__findblock, .footer-suscription {
-    width: 33%;
+  .footer-address {
     text-align: center;
+  }
+  .footer-suscription__block .button {
+    margin: 2em auto 1em auto;
+  }
+  .footer-suscription__label {
+    width: 100%;
+    margin: 2em 2em;
+  }
+  .footer-suscription__label__input {
+    border: solid 2px red;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav__logo {
+    margin-left: 15px;
+  }
+  .nav {
+    margin: 0 100px 0 -100px;
+    padding: 0;
+    width: 33.3333333333vw;
+  }
+  .nav__underlinetoright {
+    transform: translateX(85px);
+  }
+  .nav__underlinetoleft {
+    transform: translateX(85px);
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 100px 0 -30px;
+  }
+  .box {
+    margin: 0 auto 60px auto;
+    padding: 0;
+    width: 100vw;
+    height: 50vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .box__button {
+    width: auto;
+    font-size: 2vw;
+    line-height: 30px;
+  }
+  .box__title {
+    width: auto;
+    font-size: 4vw;
+    line-height: 30px;
+  }
+  .modal {
+    position: fixed;
+    top: 20px;
+    left: 159px;
+    max-width: 91.7431192661vw;
+  }
+  .valuecards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .valuecards__icon {
+    width: 50vw;
+  }
+  .valuecards__valuecard {
+    align-items: center;
+  }
+  .articles__h2 {
+    text-align: center;
+  }
+  .articles__p {
+    text-align: justify;
+  }
+  .images {
+    display: none;
+  }
+  .cards {
+    width: auto;
+    height: 100%;
+  }
+  .cards__people {
+    height: 100%;
+    border: solid 2px blue;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .imgperson {
+    width: 100%;
+    height: auto;
+  }
+  .clients__title {
+    margin-top: 7em;
+  }
+  .clients-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .cardsrow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 2em;
+    margin: 2em 1em 2em 1em;
+  }
+  .buttons {
+    margin-top: 60px;
+  }
+  .footer-container__block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-address {
+    text-align: center;
+  }
+  .footer-container__find {
+    text-align: center;
+    width: 100%;
+  }
+  .footer-suscription {
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  .footer-suscription__label {
+    width: 100%;
+    margin: 2em auto;
+    text-align: center;
+  }
+  .footer-suscription__block {
+    margin: 0.5em auto 0.5em auto;
+  }
+  .footer-suscription__block .button {
+    margin: 2em auto 0.5em auto;
   }
 }
 @media screen and (min-width: 481px) {
