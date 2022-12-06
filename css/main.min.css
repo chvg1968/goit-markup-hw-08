@@ -974,7 +974,6 @@ nav {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    opacity: 1 !important;
   }
   .valuecards {
     flex-direction: column;
@@ -1309,7 +1308,6 @@ nav {
   padding: 32px;
   background-color: white;
   transform: translateY(-100%);
-  opacity: 0;
   transition: transform 250ms ease-in-out;
   z-index: 999;
 }
