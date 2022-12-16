@@ -963,6 +963,9 @@ nav {
     right: 0;
     display: block;
     border: solid 2px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .mobile-menu {
     width: 100vw;
@@ -1220,8 +1223,13 @@ nav {
     display: none;
   }
 }
+.icon-open {
+  border-radius: 50%;
+}
+
 .icon-open:hover {
   cursor: pointer;
+  fill: #2196f3;
 }
 
 .icon-close:hover {
