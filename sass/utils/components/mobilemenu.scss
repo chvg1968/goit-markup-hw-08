@@ -1,12 +1,19 @@
 @import "../variables";
 
 
+.icon-open{
+  border-radius: 50%;
+}
+
+
+
 .icon-open:hover {
-    cursor: pointer;
+    cursor: pointer; 
+    fill:$blue-variant;
   }
   
   .icon-close:hover {
-    cursor: pointer;
+    cursor: pointer;  
     fill: $blue-variant;
     color: $white-color;
   }
@@ -87,6 +94,7 @@
     border: none;
     border-radius: 50%;
     outline: none;
+    
   }
   
   
